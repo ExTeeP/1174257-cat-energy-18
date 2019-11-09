@@ -28,6 +28,100 @@
 
     <main class="main-page">
 
+      <h1 class="main-page__title">Подбор программы</h1>
+
+      <section>
+        <h2>Анкета</h2>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p><sup>*</sup> — Обязательные поля</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Расскажите о вашем коте</legend>
+            <ul>
+              <li>
+                <label for="">Имя:<sup>*</sup></label>
+                <input type="text" name="" id="" placeholder="Барсик">
+              </li>
+              <li>
+                <label for="">Вес:<sup>*</sup></label>
+                <input type="text" name="" id="" placeholder="7">
+              </li>
+              <li>
+                <label for="">Возраст:</label>
+                <input type="text" name="" id="" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Выбор программы</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="" id="" checked>
+                <label for="">Похудение</label>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <label for="">Набор массы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <label for="">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <ul>
+              <li>
+                <label for="">E-mail:<sup>*</sup></label>
+                <input type="email" name="" id="" placeholder="kuklachev@gmail.com">
+              </li>
+              <li>
+                <label for="">Телефон:<sup>*</sup></label>
+                <input type="tel" name="" id="" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Коментарий</legend>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset>
+              <legend>Дополнительно</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" id="" checked>
+                  <label for="">Сахарозаменитель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label for="">Питьевая вода</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label for="">Молоко</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label for="">Витамины</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </section>
+
+      <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <strong class="contacts__text contacts__text--big">Приглашаем к сотрудничеству дилеров!</strong>
+          <p class="contacts__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="Наш офис находится по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8.">
+        </section>
+
     </main>
 
     <footer class="page-footer">
