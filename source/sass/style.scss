@@ -17,6 +17,8 @@ img {
   text-decoration: none;
  }
 
+
+@import "vars.scss";
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic');
 @import "blocks/visually-hidden/visually-hidden.scss";
 @import "blocks/page/page.scss";
