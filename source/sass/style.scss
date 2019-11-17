@@ -19,10 +19,10 @@ a {
 
 @import "vars.scss";
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic');
-@import "blocks/visually-hidden/visually-hidden.scss";
-@import "blocks/page/page.scss";
-@import "blocks/page-header/page-header.scss";
-@import "blocks/logo/logo.scss";
-@import "blocks/main-nav/main-nav.scss";
-@import "blocks/site-list/site-list.scss";
-@import "blocks/main-promo/main-promo.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main-promo.scss";
