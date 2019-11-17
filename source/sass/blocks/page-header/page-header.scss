@@ -19,14 +19,16 @@
   width: 320px;
   margin: 0 auto;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    margin: 25px 10px 0;
     width: 768px;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,8 +37,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
+    margin: 55px 90px 0;
     width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,30 +47,60 @@
 }
 
 .page-header__logo {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   min-height: 66px;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    min-height: 107px;
+    // padding-left: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    border-bottom: none;
+    min-height: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    min-height: 166px;
+    // padding-left: 110px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-bottom: none;
+    min-height: 60px;
   }
 }
 
 // .logo {
 // }
 
-// .logo__link {
-//   width: 191px;
-//   height: 39px;
-//   display: block;
-// }
+.logo__link {
+  width: 191px;
+  height: 39px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__link {
+    width: 191px;
+    height: 59px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__link {
+    width: 191px;
+    height: 60px;
+    display: block;
+  }
+}
 
 .page-header__toggle {
   width: 19px;
@@ -94,6 +127,7 @@
 // навигация
 
 .page-header__nav {
+  display: flex;
 }
 
 .main-nav {
@@ -103,6 +137,7 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: center;
+  flex-grow: 1;
   width: 320px;
 }
 
@@ -198,9 +233,9 @@
   }
 }
 
-// .site-list__link {
-//   color: #111111;
-// }
+.site-list__link {
+  color: #111111;
+}
 
 // @media (min-width: $tablet-width) {
 //   .
