@@ -6,6 +6,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
+    padding-bottom: 60px;
   }
 }
 
@@ -128,6 +129,17 @@
 
 .page-header__nav {
   display: flex;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__nav {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav {}
 }
 
 .main-nav {
@@ -190,6 +202,7 @@
     color: #222222;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
   }
 }
 
