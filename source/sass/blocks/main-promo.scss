@@ -1,5 +1,6 @@
 .main-promo {
   min-height: 500px;
+  margin-bottom: 10px;
   background-color: $bg-white;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
 @media (min-width: $tablet-width) {
   .main-promo {
     min-height: 806px;
+    margin: 0;
   }
 }
 
