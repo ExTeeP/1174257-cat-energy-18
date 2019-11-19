@@ -32,10 +32,11 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .catalog-program__item {
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .catalog-program__item {
+    justify-content: space-between;
+  }
+}
 
 .program-card {
   width: 280px;
