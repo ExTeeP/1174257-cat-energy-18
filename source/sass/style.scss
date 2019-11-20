@@ -1,43 +1,14 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswalmedium.woff") format("woff");
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-@import "vars.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "blocks/scafolding.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
 @import "blocks/btn.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/main-promo.scss";
 @import "blocks/catalog-program.scss";

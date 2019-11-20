@@ -9,14 +9,14 @@
   <body class="page">
 
     <header class="page-header" id="top">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo logo">
-          <a class="logo__link">
+      <div class="container">
+        <div class="page-header__wrapper-logo">
+          <a class="page-header__logo logo">
             <img class="logo__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип фитнес-магазина для котиков">
           </a>
-          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="page-header__toggle page-header__toggle--open page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="page-header__nav main-nav">
+        <nav class="page-header__nav main-nav main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -156,5 +156,25 @@
       </div>
 
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var headerToggle = document.querySelector('.page-header__toggle');
+
+      headerToggle.classList.remove('page-header__toggle--nojs');
+    
+      headerToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          headerToggle.classList.add('page-header__toggle--close');
+          headerToggle.classList.remove('page-header__toggle--open');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          headerToggle.classList.remove('page-header__toggle--close');
+          headerToggle.classList.add('page-header__toggle--open');
+        }
+      });
+    </script>
   </body>
 </html>

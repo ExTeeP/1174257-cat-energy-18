@@ -1,0 +1,39 @@
+.logo {
+  width: 220px;
+  padding: 11px 10px 15px;
+
+  &__img {
+    width: 191px;
+    height: 39px;
+  }
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    padding: 11px 10px 15px;
+
+    &__link {
+     width: 191px;
+     height: 59px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    padding: 11px 10px 15px;
+
+    &__link {
+     width: 191px;
+     height: 60px;
+    }
+  }
+}
