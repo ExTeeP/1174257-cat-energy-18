@@ -1,0 +1,21 @@
+.page-footer {
+  display: block;
+  background-color: $bg-grey;
+
+  &__wrapper-logo {
+    width: 300px;
+    height: 95px;
+    padding-top: 1px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__logo {
+    width: 128px;
+    display: block;
+  }
+
+  &__social {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
