@@ -20,7 +20,7 @@
       &:hover {
         opacity: 1;
       }
-      
+
       &:active {
         opacity: 1;
       }
@@ -38,8 +38,6 @@
     text-transform: uppercase;
   }
 }
-
-
 
 @media (min-width: $tablet-width) {
   .site-list {
@@ -81,4 +79,3 @@
     }
   }
 }
-
