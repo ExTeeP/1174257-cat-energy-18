@@ -1,9 +1,10 @@
 .advantages {
-  margin: 0 20px;
-  margin-bottom: 20px;
+  background-color: $bg-white;
+  margin-bottom: 42px;
 
   &__title {
     margin: 0;
+    margin-left: 20px;
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 60px;
@@ -11,9 +12,9 @@
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin: 0;
+    padding: 0 20px;
   }
 
   &__item {
@@ -21,6 +22,10 @@
     position: relative;
     margin-left: 80px;
     margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &--marker::before {
       content: "";
@@ -48,7 +53,7 @@
     &--easily-img::after {
       content: "";
       position: absolute;
-      width: 29px;
+      width: 30px;
       height: 31px;
       top: 13px;
       left: -64px;
