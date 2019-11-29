@@ -6,15 +6,15 @@
     height: 24px;
     margin: 39px 94px 31px;
   }
+}
 
-  &__img {
-    width: 191px;
-    height: 39px;
+.logo__img {
+  width: 191px;
+  height: 39px;
 
-    &--footer {
-      width: 128px;
-      height: 24px;
-    }
+  &--footer {
+    width: 128px;
+    height: 24px;
   }
 }
 
@@ -29,21 +29,21 @@
 @media (min-width: $tablet-width) {
   .logo {
     padding: 11px 10px 15px;
+  }
 
-    &__link {
-      width: 191px;
-      height: 59px;
-    }
+  .logo__link {
+    width: 191px;
+    height: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     padding: 11px 10px 15px;
+  }
 
-    &__link {
-      width: 191px;
-      height: 60px;
-    }
+  .logo__link {
+    width: 191px;
+    height: 60px;
   }
 }

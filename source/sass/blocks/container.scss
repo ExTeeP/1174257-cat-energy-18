@@ -2,16 +2,16 @@
   width: 340px;
   margin: 0 auto;
   padding: 0 10px;
+}
 
-  @media (min-width: $tablet-width) {
-    .container {
-      width: 768px;
-    }
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .container {
-      width: 1200px;
-    }
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
   }
 }
