@@ -1,6 +1,5 @@
 .page {
-  display: flex;
-  flex-direction: column;
+  @include container;
   background-color: $bg-main;
 }
 

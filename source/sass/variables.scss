@@ -3,15 +3,17 @@ $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
-$mobile-padding: 20px;
-$tablet-padding: 30px;
-$desktop-padding: 110px;
+$mobile-padding: 0 20px;
+$tablet-padding: 0 30px;
+$desktop-padding: 0 110px;
 
 $bg-main: #ffffff;
 $bg-secondary: #f2f2f2;
 
 $text-color-main: #111111;
+$text-color-secondary: #ffffff;
+$text-color-third: #444444;
 
 $border-color: #cdcdcd;
 
-$bg-btn-main: #68b738;
+$btn-color-main: #68b738;

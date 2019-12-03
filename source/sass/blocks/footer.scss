@@ -1,0 +1,28 @@
+.footer {
+  @include container;
+  background-color: $bg-secondary;
+}
+
+.footer__logo {
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.footer__logo-link {
+  width: 128px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer__social {
+  margin: 0 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.footer__copyright {
+  margin: 0 20px;
+}

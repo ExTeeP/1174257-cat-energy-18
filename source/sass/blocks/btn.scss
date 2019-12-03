@@ -1,15 +1,18 @@
-// .btn {
-//   width: 280px;
-//   min-height: 40px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-family: inherit;
-//   font-size: 14px;
-//   line-height: 18px;
-//   text-transform: uppercase;
-//   color: #ffffff;
-// }
+.btn {
+  width: 280px;
+  min-height: 40px;
+  margin: 0;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+  background-color: $btn-color-main;
+}
 
 // @media (min-width: $tablet-width) {
 //   .btn {
