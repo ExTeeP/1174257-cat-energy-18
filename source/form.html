@@ -6,131 +6,127 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body>
 
-    <header class="page-header" id="top">
-      <div class="container">
-        <div class="page-header__wrapper-logo">
-          <a class="page-header__logo logo">
-            <img class="logo__img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип фитнес-магазина для котиков">
-          </a>
-          <button class="page-header__toggle page-header__toggle--open page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <nav class="page-header__nav main-nav main-nav--closed">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <header class="header" id="top">
+      <div class="header__wrapper">
+        <a class="header__logo-link">
+          <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип фитнес-магазина для котиков">
+        </a>
+        <button class="header__toggle header__toggle--open header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
+      <nav class="main-nav main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main class="main-page">
-      <div class="container">
+    <main>
 
-        <h1 class="main-page__title">Подбор программы</h1>
+      <h1 class="main-page__title">Подбор программы</h1>
 
-        <section class="application">
-          <h2 class="visually-hidden">Анкета</h2>
-          <p class="application__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <p class="application__text application__text--small"><sup>*</sup> — Обязательные поля</p>
-          <form class="application__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Расскажите о вашем коте</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="textfield-1">Имя:<sup>*</sup></label>
-                  <input class="form__input-text" type="text" name="cat-name" id="textfield-1" placeholder="Барсик" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="textfield-2">Вес:<sup>*</sup></label>
-                  <input class="form__input-text" type="text" name="cat-weight" id="textfield-2" placeholder="7" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="textfield-3">Возраст:</label>
-                  <input class="form__input-text" type="text" name="cat-age" id="textfield-3" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
+      <section class="application">
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="application__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="application__text application__text--small"><sup>*</sup> — Обязательные поля</p>
+        <form class="application__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Расскажите о вашем коте</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="textfield-1">Имя:<sup>*</sup></label>
+                <input class="form__input-text" type="text" name="cat-name" id="textfield-1" placeholder="Барсик" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="textfield-2">Вес:<sup>*</sup></label>
+                <input class="form__input-text" type="text" name="cat-weight" id="textfield-2" placeholder="7" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="textfield-3">Возраст:</label>
+                <input class="form__input-text" type="text" name="cat-age" id="textfield-3" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Выбор программы</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="radio" name="program" id="radio-1" value="slim" checked>
-                  <label class="form__label" for="radio-1">Похудение</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="radio" name="program" id="radio-2" value="pro">
-                  <label class="form__label" for="radio-2">Набор массы</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="radio" name="program" id="radio-3" value="advice">
-                  <label class="form__label" for="radio-3">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Выбор программы</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" type="radio" name="program" id="radio-1" value="slim" checked>
+                <label class="form__label" for="radio-1">Похудение</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="radio" name="program" id="radio-2" value="pro">
+                <label class="form__label" for="radio-2">Набор массы</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="radio" name="program" id="radio-3" value="advice">
+                <label class="form__label" for="radio-3">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
 
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Контактные данные (владельца кота)</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="textfield-4">E-mail:<sup>*</sup></label>
-                  <input class="form__input-text" type="email" name="client-email" id="textfield-4" placeholder="kuklachev@gmail.com" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="textfield-5">Телефон:<sup>*</sup></label>
-                  <input class="form__input-text" type="tel" name="client-tel" id="textfield-5" placeholder="8 (960) 900-60-90" required>
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="textfield-4">E-mail:<sup>*</sup></label>
+                <input class="form__input-text" type="email" name="client-email" id="textfield-4" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="textfield-5">Телефон:<sup>*</sup></label>
+                <input class="form__input-text" type="tel" name="client-tel" id="textfield-5" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
 
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Коментарий</legend>
-              <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Коментарий</legend>
+            <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
 
-            <fieldset class="form__wrapper">
-              <legend class="form__title">Дополнительно</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" name="sugar" id="checkbox-1" value="on" checked>
-                  <label class="form__label" for="checkbox-1">Сахарозаменитель</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" name="water" id="checkbox-2" value="on">
-                  <label class="form__label" for="checkbox-2">Питьевая вода</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" name="milk" id="checkbox-3" value="on">
-                  <label class="form__label" for="checkbox-3">Молоко</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" name="vitamins" id="checkbox-4" value="on">
-                  <label class="form__label" for="checkbox-4">Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="btn  form_btn" type="submit">Отправить заявку</button>
-          </form>
-        </section>
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Дополнительно</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="sugar" id="checkbox-1" value="on" checked>
+                <label class="form__label" for="checkbox-1">Сахарозаменитель</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="water" id="checkbox-2" value="on">
+                <label class="form__label" for="checkbox-2">Питьевая вода</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="milk" id="checkbox-3" value="on">
+                <label class="form__label" for="checkbox-3">Молоко</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" name="vitamins" id="checkbox-4" value="on">
+                <label class="form__label" for="checkbox-4">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn  form_btn" type="submit">Отправить заявку</button>
+        </form>
+      </section>
 
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <strong class="contacts__text contacts__text--big">Приглашаем к сотрудничеству дилеров!</strong>
-          <p class="contacts__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="Наш офис находится по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8.">
-        </section>
-      </div>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <strong class="contacts__text contacts__text--big">Приглашаем к сотрудничеству дилеров!</strong>
+        <p class="contacts__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="Наш офис находится по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8.">
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -185,21 +181,22 @@
       </footer>
       <script>
         var navMain = document.querySelector('.main-nav');
-        var headerToggle = document.querySelector('.page-header__toggle');
+        var headerToggle = document.querySelector('.header__toggle');
 
-        headerToggle.classList.remove('page-header__toggle--nojs');
+        headerToggle.classList.remove('header__toggle--nojs');
+        navMain.classList.remove('main-nav--nojs');
 
         headerToggle.addEventListener('click', function() {
           if (navMain.classList.contains('main-nav--closed')) {
             navMain.classList.remove('main-nav--closed');
             navMain.classList.add('main-nav--opened');
-            headerToggle.classList.add('page-header__toggle--close');
-            headerToggle.classList.remove('page-header__toggle--open');
+            headerToggle.classList.add('header__toggle--close');
+            headerToggle.classList.remove('header__toggle--open');
           } else {
             navMain.classList.add('main-nav--closed');
             navMain.classList.remove('main-nav--opened');
-            headerToggle.classList.remove('page-header__toggle--close');
-            headerToggle.classList.add('page-header__toggle--open');
+            headerToggle.classList.remove('header__toggle--close');
+            headerToggle.classList.add('header__toggle--open');
           }
         });
       </script>

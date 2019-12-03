@@ -1,152 +1,152 @@
-.main-promo {
-  min-height: 485px;
-  margin-bottom: 17px;
-  background-color: $bg-page;
-}
-
-.main-promo__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  &--bg-cat {
-    width: 320px;
-    min-height: 305px;
-    padding-top: 26px;
-    padding-bottom: 140px;
-    margin-bottom: 130px;
-    background-color: $bg-third;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  &--bg-white {
-    position: relative;
-    background-color: $bg-page;
-  }
-}
-
-.main-promo__title {
-  padding: 0 30px;
-  margin: 0;
-  margin-bottom: 25px;
-  font-size: 36px;
-  line-height: 36px;
-  color: #ffffff;
-  font-weight: 400;
-  text-align: center;
-}
-
-.main-promo__text {
-  padding: 0 60px;
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.main-promo__img {
-  position: absolute;
-  top: -269px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.main-promo__link {
-  margin: 5px 20px;
-  background-color: $bg-third;
-  padding: 5px 20px;
-}
-
-// @media (min-width: $tablet-width) {
-//   .main-promo {
-//     min-height: 806px;
-//     margin: 0;
-//   }
-//   .main-promo__wrapper--btn {
-//     background-color: $bg-page;
-//     width: 709px;
-//     height: 609px;
-//     align-items: flex-start;
-//     padding: 30px;
-//   }
+// .main-promo {
+//   min-height: 485px;
+//   margin-bottom: 17px;
+//   background-color: $bg-page;
 // }
 
-// @media (min-width: $desktop-width) {
-//   .main-promo {}
-// }
+// .main-promo__wrapper {
+//   display: flex;
+//   flex-direction: column;
 
-// @media (min-width: $tablet-width) {
-//   .main-promo__wrapper--bg-cat {
-//     min-height: 197px;
-//     margin: 0;
-//     padding-bottom: 20px;
-//     background: none;
-//     background-color: $bg-page;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__wrapper--bg-cat {}
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__title {
-//     margin: 0;
-//     margin-bottom: 35px;
-//     padding: 0 120px;
-//     font-size: 60px;
-//     line-height: 60px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__title {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__text {
-//     margin: 0;
-//     margin-bottom: 20px;
-//     padding: 0 120px;
-//     font-size: 20px;
-//     line-height: 20px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__text {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__img {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__img {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__link {
-//     margin-left: 90px;
+//   &--bg-cat {
+//     width: 320px;
+//     min-height: 305px;
+//     padding-top: 26px;
+//     padding-bottom: 140px;
+//     margin-bottom: 130px;
 //     background-color: $bg-third;
-//     padding: 5px 20px;
+//     background-image: url("../img/index-background-mobile@1x.jpg");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+
+//   &--bg-white {
+//     position: relative;
+//     background-color: $bg-page;
 //   }
 // }
 
-// @media (min-width: $desktop-width) {
-//   .main-promo__link {
-//   }
+// .main-promo__title {
+//   padding: 0 30px;
+//   margin: 0;
+//   margin-bottom: 25px;
+//   font-size: 36px;
+//   line-height: 36px;
+//   color: #ffffff;
+//   font-weight: 400;
+//   text-align: center;
 // }
+
+// .main-promo__text {
+//   padding: 0 60px;
+//   margin: 0;
+//   margin-bottom: 10px;
+//   font-size: 14px;
+//   line-height: 14px;
+//   text-align: center;
+//   color: #ffffff;
+//   text-transform: uppercase;
+// }
+
+// .main-promo__img {
+//   position: absolute;
+//   top: -269px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+// .main-promo__link {
+//   margin: 5px 20px;
+//   background-color: $bg-third;
+//   padding: 5px 20px;
+// }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo {
+// //     min-height: 806px;
+// //     margin: 0;
+// //   }
+// //   .main-promo__wrapper--btn {
+// //     background-color: $bg-page;
+// //     width: 709px;
+// //     height: 609px;
+// //     align-items: flex-start;
+// //     padding: 30px;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo {}
+// // }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo__wrapper--bg-cat {
+// //     min-height: 197px;
+// //     margin: 0;
+// //     padding-bottom: 20px;
+// //     background: none;
+// //     background-color: $bg-page;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo__wrapper--bg-cat {}
+// // }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo__title {
+// //     margin: 0;
+// //     margin-bottom: 35px;
+// //     padding: 0 120px;
+// //     font-size: 60px;
+// //     line-height: 60px;
+// //     text-align: left;
+// //     color: #111111;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo__title {
+// //   }
+// // }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo__text {
+// //     margin: 0;
+// //     margin-bottom: 20px;
+// //     padding: 0 120px;
+// //     font-size: 20px;
+// //     line-height: 20px;
+// //     text-align: left;
+// //     color: #111111;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo__text {
+// //   }
+// // }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo__img {
+// //     display: none;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo__img {
+// //   }
+// // }
+
+// // @media (min-width: $tablet-width) {
+// //   .main-promo__link {
+// //     margin-left: 90px;
+// //     background-color: $bg-third;
+// //     padding: 5px 20px;
+// //   }
+// // }
+
+// // @media (min-width: $desktop-width) {
+// //   .main-promo__link {
+// //   }
+// // }
