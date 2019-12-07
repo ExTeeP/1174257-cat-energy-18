@@ -1,6 +1,10 @@
 .header {
-  @include container;
   background-color: $bg-main;
+}
+
+.header__container {
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .header__wrapper {

@@ -2,6 +2,11 @@
   background-color: $bg-main;
 }
 
+.contacts__container {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 .contacts__wrapper {
   display: flex;
   padding: $mobile-padding;

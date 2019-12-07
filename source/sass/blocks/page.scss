@@ -1,10 +1,12 @@
 .page {
-  @include container;
   background-color: $bg-main;
 }
 
 .page__title {
   margin: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: $mobile-padding;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;

@@ -3,7 +3,9 @@
   margin-bottom: 15px;
 }
 
-.catalog__wrapper {
+.catalog__container {
+  width: $mobile-width;
+  margin: 0 auto;
   padding: $mobile-padding;
 }
 

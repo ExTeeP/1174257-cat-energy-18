@@ -1,0 +1,7 @@
+.catalog {
+  background-color: $bg-main;
+}
+
+.catalog__list {
+  @include list-style;
+}

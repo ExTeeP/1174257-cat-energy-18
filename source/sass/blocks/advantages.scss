@@ -2,7 +2,9 @@
   margin-bottom: 42px;
 }
 
-.advantages__wrapper {
+.advantages__container {
+  width: $mobile-width;
+  margin: 0 auto;
   padding: $mobile-padding;
 }
 
