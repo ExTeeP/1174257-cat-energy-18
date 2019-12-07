@@ -1,0 +1,103 @@
+.example {
+  min-height: 705px;
+  background-color: $bg-secondary;
+  margin-bottom: 30px;
+}
+
+.example__container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: $mobile-padding;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $text-color-third;
+}
+
+.example__list {
+  @include list-style;
+  display: flex;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.example__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 124px;
+  height: 56px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 13px;
+  border: 1px solid $border-color-secondary;
+  border-radius: 3px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.example__value {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-main;
+  text-transform: uppercase;
+}
+
+.example__desc-small {
+  position: absolute;
+  display: block;
+  width: 87px;
+  min-height: 24px;
+  top: 46px;
+  left: 20px;
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $text-color-third;
+  background-color: $bg-secondary;
+}
+
+.example__count {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  align-self: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $text-color-main;
+  text-transform: uppercase;
+}

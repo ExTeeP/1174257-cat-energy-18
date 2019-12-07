@@ -1,0 +1,151 @@
+.promo {
+  margin-bottom: 22px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: $bg-main;
+}
+
+.promo__container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: $mobile-padding;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--content {
+    position: relative;
+    min-height: 305px;
+    padding-top: 25px;
+    margin-bottom: 135px;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+  color: $text-color-secondary;
+  font-weight: 400;
+  text-align: center;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-secondary;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__img {
+  position: absolute;
+  top: 166px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.promo__link {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+//   .main-promo {
+//     min-height: 806px;
+//     margin: 0;
+//   }
+//   .main-promo__wrapper--btn {
+//     background-color: $bg-page;
+//     width: 709px;
+//     height: 609px;
+//     align-items: flex-start;
+//     padding: 30px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo {}
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-promo__wrapper--bg-cat {
+//     min-height: 197px;
+//     margin: 0;
+//     padding-bottom: 20px;
+//     background: none;
+//     background-color: $bg-page;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo__wrapper--bg-cat {}
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-promo__title {
+//     margin: 0;
+//     margin-bottom: 35px;
+//     padding: 0 120px;
+//     font-size: 60px;
+//     line-height: 60px;
+//     text-align: left;
+//     color: #111111;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo__title {
+//   }
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-promo__text {
+//     margin: 0;
+//     margin-bottom: 20px;
+//     padding: 0 120px;
+//     font-size: 20px;
+//     line-height: 20px;
+//     text-align: left;
+//     color: #111111;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo__text {
+//   }
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-promo__img {
+//     display: none;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo__img {
+//   }
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-promo__link {
+//     margin-left: 90px;
+//     background-color: $bg-third;
+//     padding: 5px 20px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .main-promo__link {
+//   }
+// }

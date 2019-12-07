@@ -1,0 +1,127 @@
+.header {
+  background-color: $bg-main;
+}
+
+.header__container {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  position: relative;
+  min-height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__logo-link {
+  width: 191px;
+  height: 39px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-img {
+  width: 191px;
+  height: 39px;
+}
+
+.header__toggle {
+  position: absolute;
+  z-index: 2;
+  top: 23px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: $bg-main;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--open {
+    width: 25px;
+    height: 19px;
+    background-image: url("../../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--close {
+    width: 19px;
+    height: 19px;
+    background-image: url("../../../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+//   .page-header {
+//     display: flex;
+//     padding-bottom: 60px;
+//   }
+
+//   .page-header__wrapper {
+//     min-width: 768px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+
+//   .page-header__logo {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: flex-start;
+//     border-bottom: none;
+//     min-height: 59px;
+//   }
+
+//   .page-header__nav {
+//     display: flex;
+//     padding: 0 20px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .page-header {
+//     display: flex;
+//     padding-bottom: 113px;
+//   }
+
+//   .page-header__wrapper {
+//     min-width: 1200px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+
+//   .page-header__logo {
+//     display: flex;
+//     align-items: stretch;
+//     justify-content: flex-start;
+//     border-bottom: none;
+//     min-height: 60px;
+//   }
+
+//   .page-header__nav {
+//     display: flex;
+//   }
+// }

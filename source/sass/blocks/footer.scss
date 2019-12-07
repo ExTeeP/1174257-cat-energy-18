@@ -1,0 +1,28 @@
+.footer {
+  background-color: $bg-secondary;
+}
+
+.footer__container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: $mobile-padding;
+}
+
+.footer__logo {
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $border-color-secondary;
+}
+
+.footer__logo-link {
+  width: 128px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer__social {
+  border-bottom: 1px solid $border-color-secondary;
+}
+

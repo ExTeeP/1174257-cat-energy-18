@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 78px;
+}
+
+.copyright__text {
+  margin: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__img {
+  width: 27px;
+  height: 34px;
+  transform: scale(1.5, 1.5);
+}
+
+.copyright__img:hover path {
+  fill: $btn-color-main;
+}
+
+.copyright__img:active path {
+  fill: $btn-color-main;
+  opacity: 0.3;
+}

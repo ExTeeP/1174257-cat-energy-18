@@ -1,0 +1,42 @@
+.form {
+  background-color: $bg-main;
+  width: 320px;
+  padding: $mobile-padding;
+}
+
+.form__wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__list {
+  @include list-style;
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__label {
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $text-color-main-secondary;
+}
+
+.form__input-text {
+  height: 45px;
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $text-color-main-secondary;
+}
