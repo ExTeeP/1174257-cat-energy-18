@@ -3,7 +3,7 @@
   min-height: 266px;
   position: relative;
   padding: 20px;
-  background-color: $bg-secondary;
+  background-color: $color-third;
 
   &--marker::before {
     content: "";
@@ -13,7 +13,7 @@
     position: absolute;
     top: 24px;
     left: 23px;
-    background-color: $btn-color-main;
+    background-color: $color-second;
     border-radius: 50%;
   }
 
@@ -43,24 +43,21 @@
 }
 
 .program-card__title {
+  @include font-style__4;
   margin: 0;
   margin-top: 10px;
   margin-bottom: 30px;
   margin-left: 72px;
-  font-size: 24px;
-  line-height: 37px;
   text-transform: uppercase;
-  font-weight: 400;
   color: $text-color-main;
 }
 
 .program-card__text {
+  @include font-style__5;
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-color-third;
+  font-family: $font-second;
+  color: $text-color-fourth;
   text-align: left;
 
   &--divider::after {
@@ -68,30 +65,29 @@
     display: block;
     padding-top: 21px;
     height: 1px;
-    border-bottom: 1px solid $border-color-secondary;
+    border-bottom: 1px solid $border-color-second;
   }
 }
 
 .program-card__btn {
+  @include font-style__15;
   display: block;
   width: 140px;
-  font-size: 16px;
-  line-height: 16px;
   text-transform: uppercase;
   color: $text-color-main;
 }
 
-@media (min-width: $tablet-width) {
-  .program-card {
-    width: 708px;
-    min-height: 372px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .program-card {
+//     width: 708px;
+//     min-height: 372px;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .program-card {
-    width: 570px;
-    min-height: 372px;
-    flex-direction: row;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .program-card {
+//     width: 570px;
+//     min-height: 372px;
+//     flex-direction: row;
+//   }
+// }

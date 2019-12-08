@@ -20,11 +20,8 @@
 }
 
 .product__title {
+  @include font-style__12;
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
   text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
@@ -36,20 +33,18 @@
 }
 
 .product__text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  @include font-style__16;
+  font-family: $font-second;
   text-align: left;
-  color: $text-color-third;
+  color: $text-color-fourth;
   align-self: center;
 }
 
 .product__desc {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  @include font-style__16;
+  font-family: $font-second;
   text-align: left;
-  color: $text-color-third;
+  color: $text-color-fourth;
 }
 
 .product__link-img {
@@ -61,7 +56,7 @@
   margin-bottom: 24px;
 
   &--add {
-    color: $text-color-third;
-    background-color: $bg-secondary;
+    color: $text-color-fourth;
+    background-color: $color-third;
   }
 }

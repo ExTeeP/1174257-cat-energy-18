@@ -3,12 +3,6 @@
   margin-bottom: 15px;
 }
 
-.catalog-program__container {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding: $mobile-padding;
-}
-
 .catalog-program__list {
   @include list-style;
 }

@@ -1,13 +1,16 @@
 .form {
-  background-color: $bg-main;
-  padding: $mobile-padding;
+  background-color: $color-main;
 }
 
 .form__wrapper {
-  width: 280px;
   margin: 0;
   padding: 0;
   border: none;
+
+  &--programm {
+    padding: 20px;
+    border: 1px solid $border-color-second;
+  }
 }
 
 .form__list {
@@ -21,22 +24,53 @@
 }
 
 .form__label {
-  padding-right: 15px;
-  font-size: 16px;
-  line-height: 18px;
+  @include font-style__label;
   text-align: left;
   text-transform: uppercase;
-  color: $text-color-main-secondary;
+  color: $text-color-third;
+  
+  &--text {
+    padding-right: 15px;
+  }
+
+  // &--radio {
+
+  // }
+
+  // &--checkbox {
+
+  // }
 }
 
-.form__input-text {
-  height: 45px;
-  flex-grow: 1;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  text-transform: uppercase;
-  color: $text-color-main-secondary;
-  border: 1px solid $border-color-secondary;
+.form__input {
+  border: 1px solid $border-color-second;
+
+  &--text {
+    @include font-style__label;
+    height: 45px;
+    flex-grow: 1;
+    font-family: $font-main;
+    text-align: left;
+    text-transform: uppercase;
+    color: $text-color-fourth;
+  }
+
+  &--radio {
+    opacity: 0;
+  }
+
+  &--checkbox {
+    opacity: 0;
+  }
+}
+
+.form__custom {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-second;
+
+  &--radio {
+    border-radius: 50%;
+  }
 }

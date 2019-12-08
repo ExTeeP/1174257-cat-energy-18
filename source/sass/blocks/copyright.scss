@@ -6,11 +6,10 @@
 }
 
 .copyright__text {
+  @include font-style__15;
   margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  color: #444444;
+  font-family: $font-second;
+  color: $text-color-fourth;
 }
 
 .copyright__link {
@@ -26,10 +25,10 @@
 }
 
 .copyright__img:hover path {
-  fill: $btn-color-main;
+  fill: $color-second;
 }
 
 .copyright__img:active path {
-  fill: $btn-color-main;
+  fill: $color-second;
   opacity: 0.3;
 }
