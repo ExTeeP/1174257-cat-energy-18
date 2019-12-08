@@ -4,7 +4,6 @@
 
 .contacts__wrapper {
   display: flex;
-  padding: $mobile-padding;
   margin-bottom: 25px;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .contacts__text {
-  @include font-style__12;
+  @include font-style__11;
   display: block;
   width: 140px;
   margin: 0;
@@ -32,6 +31,12 @@
 .contacts__map-wrapper {
   height: 362px;
   overflow: hidden;
+  background-color: $color-third;
+}
+
+.contacts__inner {
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .contacts__map {

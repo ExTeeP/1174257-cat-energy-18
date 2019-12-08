@@ -3,12 +3,17 @@
   background-color: $color-main;
 }
 
-.promo__content {
+.promo__wrapper {
+  background-color: $color-second;
+}
+
+.promo__inner {
   width: $mobile-width;
   min-height: 305px;
   margin: 0 auto;
   margin-bottom: 135px;
   padding-top: 25px;
+  padding-bottom: 140px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,7 +21,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: $color-second;
 }
 
 .promo__title {
@@ -37,8 +41,10 @@
 }
 
 .promo__img {
+  width: 280px;
+  height: 270px;
   position: absolute;
-  top: 166px;
+  bottom: -132px;
   left: 50%;
   transform: translateX(-50%);
 }
