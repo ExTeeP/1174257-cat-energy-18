@@ -35,13 +35,13 @@
     <main class="page">
 
       <section class="application">
-        <div class="application__container">
+        <div class="container">
           <h2 class="application__title">Подбор программы</h2>
           <p class="application__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
         <form class="application__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__wrapper">
-            <div class="form__container">
+          <div class="form__wrapper">
+            <fieldset class="form__cat">
               <legend class="visually-hidden">Расскажите о вашем коте</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -57,39 +57,37 @@
                   <input class="form__input form__input--text" type="text" name="cat-age" id="textfield-3" placeholder="7">
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="form__wrapper form__wrapper--programm">
-            <div class="form__container">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="form__input form__input--radio" type="radio" name="program" id="radio-1" value="slim" checked>
-                <label class="form__label form__label--radio" for="radio-1">
-                  <span class="form__custom form__custom--radio"></span>
-                  Похудение
-                </label>
-              </li>
-              <li class="form__item">
-                <input class="form__input form__input--radio" type="radio" name="program" id="radio-2" value="pro">
-                <label class="form__label form__label--radio" for="radio-2">
-                  <span class="form__custom form__custom--radio"></span>
-                  Набор массы
-                </label>
-              </li>
-              <li class="form__item">
-                <input class="form__input form__input--radio" type="radio" name="program" id="radio-3" value="advice">
-                <label class="form__label form__label--radio" for="radio-3">
-                  <span class="form__custom form__custom--radio"></span>
-                  Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="form__programm">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input form__input--radio" type="radio" name="program" id="radio-1" value="slim" checked>
+                  <label class="form__label form__label--radio" for="radio-1">
+                    <span class="form__custom form__custom--radio"></span>
+                    Похудение
+                  </label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input form__input--radio" type="radio" name="program" id="radio-2" value="pro">
+                  <label class="form__label form__label--radio" for="radio-2">
+                    <span class="form__custom form__custom--radio"></span>
+                    Набор массы
+                  </label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input form__input--radio" type="radio" name="program" id="radio-3" value="advice">
+                  <label class="form__label form__label--radio" for="radio-3">
+                    <span class="form__custom form__custom--radio"></span>
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__wrapper">
-            <div class="form__container">
+          <fieldset class="form__feedback">
               <legend class="form__title">Контактные данные (владельца кота)</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -101,18 +99,14 @@
                   <input class="form__input form__input--text" type="tel" name="client-tel" id="textfield-5" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
-            </div>
           </fieldset>
 
-          <fieldset class="form__wrapper">
-            <div class="form__container">
+          <fieldset class="form__comment">
               <legend class="form__title">Коментарий</legend>
               <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
           </fieldset>
 
-          <fieldset class="form__wrapper">
-            <div class="form__container">
+          <fieldset class="form__additional">
               <legend class="form__title">Дополнительно</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -144,13 +138,9 @@
                   </label>
                 </li>
               </ul>
-            </div>
           </fieldset>
-          <div class="form__container">
-            <button class="btn  form_btn" type="submit">Отправить заявку</button>
-          </div>
+          <button class="btn form_btn" type="submit">Отправить заявку</button>
         </form>
-        <div class="application__container">
           <p class="application__note"><sup>*</sup> — Обязательные поля</p>
         </div>
       </section>
@@ -172,7 +162,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="container">
         <div class="footer__logo">
           <a href="#top" class="footer__logo-link">
             <img class="logo__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип фитнес-магазина для котиков.">

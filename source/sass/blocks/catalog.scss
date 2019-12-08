@@ -8,10 +8,11 @@
   margin: 0;
   margin-top: 15px;
   margin-bottom: 30px;
-  padding: $mobile-padding;
   text-align: left;
 }
 
 .catalog__list {
   @include list-style;
+  width: 320px;
+  margin: 0 auto;
 }

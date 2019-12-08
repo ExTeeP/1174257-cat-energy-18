@@ -2,15 +2,36 @@
   background-color: $color-main;
 }
 
-.form__wrapper {
+.form__cat {
   margin: 0;
   padding: 0;
   border: none;
+}
 
-  &--programm {
-    padding: 20px;
-    border: 1px solid $border-color-second;
-  }
+.form__programm {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 20px;
+  border: 1px solid $border-color-second;
+}
+
+.form__feedback {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__comment {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__additional {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .form__list {
