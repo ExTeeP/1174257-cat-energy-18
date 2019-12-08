@@ -1,10 +1,10 @@
 .form {
   background-color: $bg-main;
-  width: 320px;
   padding: $mobile-padding;
 }
 
 .form__wrapper {
+  width: 280px;
   margin: 0;
   padding: 0;
   border: none;
@@ -32,11 +32,11 @@
 .form__input-text {
   height: 45px;
   flex-grow: 1;
-  padding: 10px 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main-secondary;
+  border: 1px solid $border-color-secondary;
 }
