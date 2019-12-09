@@ -1,0 +1,28 @@
+.product-related {
+  min-height: 130px;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid $border-color;
+
+  &:first-child {
+    border-top: 1px solid $border-color;
+  }
+}
+
+
+.product-related__title {
+  @include font-style__12;
+  margin: 0;
+  text-align: left;
+  color: $text-color-third;
+  text-transform: uppercase;
+}
+
+.product-related__desc {
+  @include font-style__17;
+  font-family: $font-second;
+  text-align: left;
+  color: $text-color-fourth;
+}

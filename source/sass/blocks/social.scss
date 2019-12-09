@@ -24,7 +24,7 @@
 }
 
 .social__img {
-  background-color: $bg-secondary;
+  background-color: $color-third;
 
   &--vk {
     width: 22px;
@@ -43,10 +43,10 @@
 }
 
 .social__img:hover path {
-  fill: $btn-color-main;
+  fill: $color-second;
 }
 
 .social__img:active path {
-  fill: $btn-color-main;
+  fill: $color-second;
   opacity: 0.3;
 }

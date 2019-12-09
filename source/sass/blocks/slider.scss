@@ -1,5 +1,5 @@
 .slider {
-  background-color: $bg-secondary;
+  background-color: $color-third;
 }
 
 .slider__img {
@@ -22,13 +22,11 @@
 }
 
 .slider__btn {
+  @include font-style__12;
   padding: 0 8px;
   border: none;
-  background-color: $bg-secondary;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
+  background-color: $color-third;
+  font-family: $font-main;
   color: $text-color-main;
   text-transform: uppercase;
   cursor: pointer;
@@ -47,14 +45,14 @@
   height: 14px;
   margin-top: 3px;
   padding: 3px 6px;
-  border: 1px solid $border-color-secondary;
+  border: 1px solid $border-color-second;
   border-radius: 6px;
-  background-color: $bg-main;
+  background-color: $color-main;
 }
 
 .slider__range-toggle {
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  background-color: $btn-color-main;
+  background-color: $color-second;
 }

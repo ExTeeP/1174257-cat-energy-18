@@ -12,11 +12,11 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
   font-style: normal;
-  background-color: $bg-main;
+  background-color: $color-main;
   color: $text-color-main;
 }
 
@@ -27,6 +27,12 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: $mobile-padding;
 }
 
 .visually-hidden {

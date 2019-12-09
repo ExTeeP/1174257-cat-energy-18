@@ -4,33 +4,30 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header" id="top">
-      <div class="header__container">
-        <div class="header__wrapper">
-          <a class="header__logo-link">
-            <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип фитнес-магазина для котиков">
-          </a>
-          <button class="header__toggle header__toggle--open header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <nav class="main-nav main-nav--nojs main-nav--closed">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="header__wrapper">
+        <a class="header__logo-link">
+          <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип фитнес-магазина для котиков">
+        </a>
+        <button class="header__toggle header__toggle--open header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page">
@@ -38,20 +35,20 @@
       <h1 class="visually-hidden">Фитнес-магазин Cat Energy</h1>
 
       <section class="promo">
-        <div class="promo__container">
-          <div class="promo__wrapper promo__wrapper--content">
+        <div class="promo__wrapper">
+          <div class="promo__inner">
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__text">Занялся собой? Займись котом!</p>
             <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Стаканчик с питанием Cat Energy Pro со вкусом курицы">
           </div>
-          <div class="promo__wrapper">
-            <a class="btn promo__link" href="form.html">Подобрать программу</a>
-          </div>
+        </div>
+        <div class="container">
+          <a class="btn promo__link" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
       <section class="catalog-program">
-        <div class="catalog-program__container">
+        <div class="container">
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="catalog-program__list">
             <li class="catalog-program__item">
@@ -73,7 +70,7 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages__container">
+        <div class="container">
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--marker advantages__item--useful-img">
@@ -93,7 +90,7 @@
       </section>
 
       <section class="example">
-        <div class="example__container">
+        <div class="container">
           <div class="example__wrapper">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом  он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -135,14 +132,16 @@
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="contacts__container">
+      <section class="contacts contacts--main">
+        <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">
             <strong class="contacts__strong">Приглашаем к&nbsp;сотрудничеству дилеров!</strong>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="contacts__map-wrapper">
+        </div>
+        <div class="contacts__map-wrapper">
+          <div class="contacts__inner">
             <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш офис находится по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8.">
           </div>
         </div>
@@ -150,7 +149,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="container">
         <div class="footer__logo">
           <a href="#top" class="footer__logo-link">
             <img class="logo__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип фитнес-магазина для котиков.">

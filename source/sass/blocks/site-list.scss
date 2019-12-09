@@ -1,5 +1,5 @@
 .site-list {
-  background-color: $bg-main;
+  background-color: $color-main;
 }
 
 .site-list__item {
@@ -31,10 +31,8 @@
 }
 
 .site-list__link {
+  @include font-style__menu;
   color: $text-color-main;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
   text-transform: uppercase;
 }
 

@@ -1,46 +1,47 @@
 .contacts {
-  background-color: $bg-main;
-}
+  padding-top: 30px;
+  background-color: $color-third;
 
-.contacts__container {
-  width: $mobile-width;
-  margin: 0 auto;
+  &--main {
+    background-color: $color-main;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
-  padding: $mobile-padding;
   margin-bottom: 25px;
 }
 
 .contacts__strong {
+  @include font-style__12;
   display: block;
   width: 140px;
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-main;
   text-transform: uppercase;
   color: $text-color-main;
 }
 
 .contacts__text {
+  @include font-style__11;
   display: block;
   width: 140px;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: $text-color-third;
+  font-family: $font-second;
+  color: $text-color-fourth;
 }
 
 .contacts__map-wrapper {
   height: 362px;
   overflow: hidden;
+  background-color: $color-third;
+}
+
+.contacts__inner {
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .contacts__map {

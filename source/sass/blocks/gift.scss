@@ -1,0 +1,32 @@
+.gift {
+  height: 289px;
+  margin-bottom: 65px;
+  position: relative;
+  padding-top: 185px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: $color-second;
+}
+
+.gift__text {
+  @include font-style__12;
+  display: block;
+  padding: 0 60px;
+  font-family: $font-second;
+  text-align: center;
+  color: $text-color-second;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: 65px;
+    left: 113px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
