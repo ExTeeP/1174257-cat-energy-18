@@ -1,4 +1,5 @@
 .application {
+  margin-bottom: 30px;
   background-color: $color-main;
 }
 
@@ -24,14 +25,4 @@
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main;
-}
-
-.application__note {
-  @include font-style__5;
-  margin: 0;
-  font-family: $font-second;
-  text-align: center;
-  text-transform: none;
-  color: $text-color-fourth;
-  order: 1;
 }

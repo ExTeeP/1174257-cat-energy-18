@@ -2,35 +2,61 @@
   background-color: $color-main;
 }
 
+.form__title {
+  @include font-style__9;
+  position: relative;
+  padding: 0;
+  margin-bottom: 30px;
+  color: $text-color-main;
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 53px;
+  //   height: 3px;
+  //   top: 14px;
+  //   right: -20px;
+  //   background-color: $color-second;
+  // }
+}
+
 .form__cat {
   margin: 0;
-  padding: 0;
+  margin-bottom: 23px;
+  padding: $mobile-padding;
   border: none;
 }
 
 .form__programm {
   margin: 0;
-  padding: 0;
-  border: none;
+  margin-bottom: 30px;
   padding: 20px;
+  border: none;
   border: 1px solid $border-color-second;
 }
 
 .form__feedback {
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
+  padding: $mobile-padding;
   border: none;
 }
 
 .form__comment {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  padding: $mobile-padding;
   border: none;
 }
 
 .form__additional {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
+  padding: $mobile-padding;
   border: none;
 }
 
@@ -41,7 +67,43 @@
 .form__item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  position: relative;
+  
+  &--cat {
+    height: 45px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--programm {
+    height: 30px;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--feedback {
+    height: 45px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--additional {
+    height: 30px;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form__label {
@@ -51,16 +113,60 @@
   color: $text-color-third;
   
   &--text {
-    padding-right: 15px;
+    margin-right: 15px;
   }
 
-  // &--radio {
+  &--radio {
+    padding-left: 25px;
 
-  // }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 1px solid $border-color-second;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 9px;
+      left: 9px;
+      border-radius: 50%;
+      background-color: $color-second;
+    }
+  }
 
-  // &--checkbox {
+  &--checkbox {
+    padding-left: 25px;
 
-  // }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      border: 1px solid $border-color-second;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 17px;
+      top: 6px;
+      left: 5px;
+      background-image: url("../../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;      
+    }
+  }
 }
 
 .form__input {
@@ -69,6 +175,7 @@
   &--text {
     @include font-style__label;
     height: 45px;
+    padding-left: 15px;
     flex-grow: 1;
     font-family: $font-main;
     text-align: left;
@@ -85,13 +192,50 @@
   }
 }
 
-.form__custom {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $border-color-second;
+.form__input--radio + .form__label--radio::after {
+  content: none;
+}
 
-  &--radio {
-    border-radius: 50%;
-  }
+.form__input--radio:checked + .form__label--radio::after {
+  content: "";
+}
+
+.form__input--radio:focus + .form__label--radio::before {
+  outline: rgb(59, 153, 252) auto 1px;
+}
+
+.form__input--checkbox + .form__label--checkbox::after {
+  content: none;
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  content: "";
+}
+
+.form__input--checkbox:focus + .form__label--checkbox::before {
+  outline: rgb(59, 153, 252) auto 1px;
+}
+
+.form__textarea {
+  @include font-style__label;
+  width: 280px;
+  height: 150px;
+  padding: 13px;
+  font-family: $font-main;
+  text-transform: uppercase;
+  resize: none;
+  border: 1px solid $border-color-second;
+}
+
+.form__btn {
+  margin-bottom: 15px;
+}
+
+.form__note {
+  @include font-style__5;
+  margin: 0;
+  font-family: $font-second;
+  text-align: center;
+  text-transform: none;
+  color: $text-color-fourth;
 }

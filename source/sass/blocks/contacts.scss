@@ -1,5 +1,10 @@
 .contacts {
-  background-color: $color-main;
+  padding-top: 30px;
+  background-color: $color-third;
+
+  &--main {
+    background-color: $color-main;
+  }
 }
 
 .contacts__wrapper {
