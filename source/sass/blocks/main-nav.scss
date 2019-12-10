@@ -1,7 +1,16 @@
 .main-nav {
-  margin: 0 auto;
   width: $mobile-width;
+  margin: 0 auto;
   min-height: 198px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 450px;
+    min-height: 59px;
+    margin: 0;
+    display: flex;
+  }
 }
 
 .main-nav__list {
@@ -22,28 +31,9 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .main-nav {
-//     min-height: auto;
-//   }
-
-//   .main-nav__toggle {
-//     display: none;
-//   }
-
-//   .main-nav__wrapper {
-//     display: flex;
-//     width: 440px;
-//   }
-// }
-
 // @media (min-width: $desktop-width) {
 //   .main-nav {
 //     min-height: auto;
-//   }
-
-//   .main-nav__toggle {
-//     display: none;
 //   }
 
 //   .main-nav__wrapper {

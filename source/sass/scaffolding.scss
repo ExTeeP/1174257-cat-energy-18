@@ -33,6 +33,13 @@ a {
   padding: $mobile-padding;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding: $tablet-padding;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

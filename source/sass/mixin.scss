@@ -39,6 +39,13 @@
   font-weight: 500;
 }
 
+@mixin font-style__menu-tablet {
+  // итемы меню планшет
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
 @mixin font-style__12 {
   // стронг текст в контактах, текст в блоке с подарком, заголовок доп. товаров, заголовок товара
   font-size: 16px;

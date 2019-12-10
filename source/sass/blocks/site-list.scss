@@ -2,11 +2,22 @@
   background-color: $color-main;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include font-style__menu-tablet;
+    color: $text-color-third;
+  }
+}
+
 .site-list__item {
+  height: 66px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 66px;
   border-bottom: 1px solid $border-color;
 
   &:hover {
@@ -30,32 +41,28 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+}
+
 .site-list__link {
   @include font-style__menu;
   color: $text-color-main;
   text-transform: uppercase;
 }
 
-// @media (min-width: $tablet-width) {
-//   .site-list {
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     color: #222222;
-//     font-size: 18px;
-//     line-height: 25px;
-//     font-weight: 400;
-//   }
-
-//   .site-list__item {
-//     height: 59px;
-//     border: none;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    @include font-style__menu-tablet;
+    color: $text-color-third;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .site-list {
