@@ -40,6 +40,13 @@ a {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    padding: $desktop-padding;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

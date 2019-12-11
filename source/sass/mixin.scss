@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+@mixin font-style__promo-title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
 @mixin font-style__title {
   // заголовоки
   font-size: 36px;
@@ -42,8 +48,15 @@
 @mixin font-style__menu {
   // кнопки меню
   font-size: 20px;
-  line-height: 20px;
   font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin font-style__promo-text-tablet {
+  // промо текст
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 @mixin font-style__menu-tablet {

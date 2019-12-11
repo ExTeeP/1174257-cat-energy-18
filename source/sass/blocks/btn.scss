@@ -15,14 +15,13 @@
   border: none;
 }
 
-// @media (min-width: $tablet-width) {
-//   .btn {
-//     width: 245px;
-//     min-height: 52px;
-//     font-size: 20px;
-//     line-height: 20px;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 245px;
+    min-height: 52px;
+    @include font-style__promo-text-tablet;
+  }
+}
 
 // // @media (min-width: $desktop-width) {
 // //   .btn {}

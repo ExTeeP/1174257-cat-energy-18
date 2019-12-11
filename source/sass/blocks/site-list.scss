@@ -1,11 +1,10 @@
 .site-list {
   @include font-style__menu;
-  background-color: $color-main;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 450px;
+    width: 440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,6 +77,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list__link {
-    color: $text-color-second;
+    color: $text-color-third;
   }
 }
