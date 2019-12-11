@@ -5,12 +5,13 @@
 
 @media (min-width: $tablet-width) {
   .catalog-program {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-program {
+    min-height: 425px;
     margin-bottom: 20px;
   }
 }
