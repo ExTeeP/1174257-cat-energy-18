@@ -64,6 +64,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    @include font-style__menu-desktop;
+    color: $text-color-second;
+  }
+}
+
 // @media (min-width: $desktop-width) {
 //   .site-list {
 //     margin: 0 auto;
