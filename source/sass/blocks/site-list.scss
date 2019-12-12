@@ -6,6 +6,7 @@
   .site-list {
     min-width: 440px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     @include font-style__menu-tablet;
@@ -55,10 +56,10 @@
     justify-content: flex-start;
     align-items: center;
     border: none;
-    margin-right: 35px;
+    margin-left: 35px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 }
