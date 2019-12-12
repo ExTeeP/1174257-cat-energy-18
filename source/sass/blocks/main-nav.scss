@@ -1,28 +1,5 @@
 .main-nav {
-  width: $mobile-width;
-  margin: 0 auto;
   min-height: 198px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    width: 450px;
-    min-height: 59px;
-    margin: 0;
-    padding-left: 10px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    width: 600px;
-    min-height: 60px;
-    padding-left: 120px;
-  }
-}
-
-.main-nav__list {
-  @include list-style;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -39,13 +16,18 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .main-nav {
-//     min-height: auto;
-//   }
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 59px;
+  }
+}
 
-//   .main-nav__wrapper {
-//     display: flex;
-//     width: 480px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .main-nav {
+    min-height: 60px;
+  }
+}
+
+.main-nav__list {
+  @include list-style;
+}

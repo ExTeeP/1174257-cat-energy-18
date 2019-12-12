@@ -4,9 +4,9 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 440px;
+    min-width: 440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     @include font-style__menu-tablet;
     color: $text-color-third;
@@ -15,7 +15,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 480px;
+    min-width: 480px;
     @include font-style__menu-desktop;
   }
 }
@@ -52,9 +52,14 @@
   .site-list__item {
     height: 59px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border: none;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
