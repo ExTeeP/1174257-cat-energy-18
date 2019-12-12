@@ -2,12 +2,31 @@
   background-color: $color-third;
 }
 
+@media (min-width: $tablet-width) {
+  .footer {
+    min-height: 150px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer__logo {
   height: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $border-color-second;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__logo {
+    border: none;
+  }
 }
 
 .footer__logo-link {
@@ -18,5 +37,11 @@
 
 .footer__social {
   border-bottom: 1px solid $border-color-second;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__social {
+    border: none;
+  }
 }
 
