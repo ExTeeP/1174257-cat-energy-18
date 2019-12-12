@@ -1,8 +1,14 @@
 .copyright {
+  min-height: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 78px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-height: auto;
+  }
 }
 
 .copyright__text {
@@ -10,6 +16,12 @@
   margin: 0;
   font-family: $font-second;
   color: $text-color-fourth;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 20px;
+  }
 }
 
 .copyright__link {
