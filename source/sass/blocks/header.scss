@@ -2,15 +2,56 @@
   background-color: $color-main;
 }
 
-.header__wrapper {
-  width: $mobile-width;
-  margin: 0 auto;
-  position: relative;
+@media (min-width: $tablet-width) {
+  .header {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    padding-top: 55px;
+  }
+}
+
+.header__logo {
   min-height: 66px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    min-height: 59px;
+    margin: 0;
+    position: static;
+    border-bottom: none;
+  }
 }
 
 .header__logo-link {
@@ -25,6 +66,21 @@
   
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-link {
+    width: 174px; 
+    min-height: 59px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-link {
+    width: 203px;
+    min-height: 60px;
   }
 }
 
@@ -70,32 +126,18 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .page-header {
-//     display: flex;
-//     padding-bottom: 60px;
-//   }
+@media (min-width: $tablet-width) {
+  .header__toggle {
+    display: none;
+  }
+}
 
-//   .page-header__wrapper {
-//     min-width: 768px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
 
-//   .page-header__logo {
-//     display: flex;
-//     align-items: baseline;
-//     justify-content: flex-start;
-//     border-bottom: none;
-//     min-height: 59px;
-//   }
-
-//   .page-header__nav {
-//     display: flex;
-//     padding: 0 20px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .header__toggle {
+    display: none;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .page-header {

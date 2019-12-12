@@ -9,6 +9,26 @@
   border: 1px solid $border-color;
 }
 
+@media (min-width: $tablet-width) {
+  .product {
+    width: 324px;
+    min-height: 431px;
+    margin-top: 82px;
+    border: none;
+    background-color: $color-third;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+    min-height: 431px;
+    margin-top: 82px;
+    border: none;
+    background-color: $color-third;
+  }
+}
+
 .product__link {
   color: $text-color-main;
 }

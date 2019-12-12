@@ -42,6 +42,32 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .program-card {
+    width: 708px;
+    min-height: 372px;
+    position: relative;
+    padding-top: 80px;
+    padding-right: 60px;
+    padding-bottom: 80px;
+    padding-left: 55px;
+    background-color: $color-third;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-card {
+    width: 570px;
+    min-height: 372px;
+    position: relative;
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    background-color: $color-third;
+  }
+}
+
 .program-card__title {
   @include font-style__4;
   margin: 0;
