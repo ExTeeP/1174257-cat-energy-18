@@ -156,7 +156,8 @@
   }
 }
 
-.promo__link {
+.promo__btn {
+  width: 280px;
   margin-bottom: 10px;
 
   &:last-child {
@@ -165,99 +166,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__link {
+  .promo__btn {
     margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .promo__link {
+  .promo__btn {
+    width: 245px;
+    min-height: 52px;
     margin-left: 80px;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__wrapper--btn {
-//     background-color: $bg-page;
-//     width: 709px;
-//     height: 609px;
-//     align-items: flex-start;
-//     padding: 30px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo {}
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__wrapper--bg-cat {
-//     min-height: 197px;
-//     margin: 0;
-//     padding-bottom: 20px;
-//     background: none;
-//     background-color: $bg-page;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__wrapper--bg-cat {}
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__title {
-//     margin: 0;
-//     margin-bottom: 35px;
-//     padding: 0 120px;
-//     font-size: 60px;
-//     line-height: 60px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__title {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__text {
-//     margin: 0;
-//     margin-bottom: 20px;
-//     padding: 0 120px;
-//     font-size: 20px;
-//     line-height: 20px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__text {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__img {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__img {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__link {
-//     margin-left: 90px;
-//     background-color: $bg-third;
-//     padding: 5px 20px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__link {
-//   }
-// }

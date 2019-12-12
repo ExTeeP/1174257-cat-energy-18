@@ -2,10 +2,11 @@
   width: 320px;
   min-height: 210px;
   margin-top: -1px;
-  padding: 0 19px;
+  padding: 0 19px; //потому что бордеры +2px с краёв
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid $border-color;
 }
 
@@ -14,8 +15,10 @@
     width: 324px;
     min-height: 431px;
     margin-top: 82px;
-    border: none;
+    padding: 0 37px;
+    padding-top: 126px;
     background-color: $color-third;
+    border: none;
   }
 }
 
@@ -40,6 +43,14 @@
   padding-top: 22px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .product__wrapper-desc {
+    width: 250px;
+    margin-left: 0;
+    padding-top: 0;
+  }
 }
 
 .product__title {
@@ -90,15 +101,39 @@
 
 .product__link-img {
   position: absolute;
+  top: 0;
+  left: 19px;
   order: -1;
 }
 
+@media (min-width: $tablet-width) {
+  .product__link-img {
+    width: auto;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+  }
+}
+
 .product__btn {
+  width: 280px;
   margin-bottom: 24px;
-  flex-grow: 0;
 
   &--add {
     color: $text-color-fourth;
     background-color: $color-third;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__btn {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__btn {
+    width: 169px;
   }
 }
