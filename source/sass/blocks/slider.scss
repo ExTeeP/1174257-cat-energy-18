@@ -2,6 +2,11 @@
   background-color: $color-third;
 }
 
+@media (min-width: $tablet-width) {
+  .slider {
+  }
+}
+
 .slider__img {
   width: 311px;
   height: 232px;
@@ -9,10 +14,8 @@
 
 .slider__list {
   @include list-style;
-}
-
-.slider__img-wrapper {
   display: flex;
+  justify-content: center;
   margin-bottom: 36px;
 }
 
@@ -21,33 +24,55 @@
   justify-content: center;
 }
 
+.slider__item {
+  display: flex;
+  align-items: center;
+}
+
 .slider__btn {
   @include font-style__12;
-  padding: 0 8px;
+  padding: 0;
   border: none;
-  background-color: $color-third;
   font-family: $font-main;
   color: $text-color-main;
   text-transform: uppercase;
+  background-color: $color-third;
   cursor: pointer;
 
   &--before {
-    margin-right: 10px;
+    margin-right: 18px;
   }
 
   &--after {
-    margin-left: 10px;
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__btn {
+    @include font-style__promo-text-tablet;
+
   }
 }
 
 .slider__range-bar {
   width: 84px;
   height: 14px;
-  margin-top: 3px;
   padding: 3px 6px;
   border: 1px solid $border-color-second;
   border-radius: 6px;
   background-color: $color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__range-bar {
+    width: 428px;
+    height: 6px;
+    position: relative;
+    border: none;
+    border-radius: 2.5;
+    background-color: $border-color-third;
+  }
 }
 
 .slider__range-toggle {
@@ -55,4 +80,29 @@
   height: 6px;
   border-radius: 3px;
   background-color: $color-second;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__range-toggle {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    top: -16px;
+    border: 1px solid $border-color-second;
+    border-radius: 50%;
+    background-color: $color-main;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      border-radius: 50%;
+      background-color: $color-second;
+    }
+  }
 }

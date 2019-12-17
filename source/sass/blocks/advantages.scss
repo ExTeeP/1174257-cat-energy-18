@@ -10,6 +10,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages {
+    border-bottom: none;
+  }
+}
+
 .advantages__title {
   @include font-style__title;
   margin: 0;
