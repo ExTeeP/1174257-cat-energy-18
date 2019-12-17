@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-top: 30px;
+    padding-top: 40px;
     background-color: $color-main;
   }
 }
@@ -25,7 +25,6 @@
     width: auto;
     margin: 0;
     padding: 0;
-    display: flex;
   }
 }
 
@@ -36,6 +35,7 @@
     padding: $desktop-padding;
     padding-top: 70px;
     position: relative;
+    display: flex;
   }
 }
 
@@ -50,7 +50,7 @@
     width: $tablet-width;
     margin: 0 auto;
     padding: $tablet-padding;
-    margin-bottom: 240px;
+    margin-bottom: 235px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -78,6 +78,7 @@
 @media (min-width: $tablet-width) {
   .example__title {
     @include font-style__promo-title;
+    margin-bottom: 65px;
   }
 }
 
@@ -101,6 +102,8 @@
 @media (min-width: $tablet-width) {
   .example__text {
     @include font-style__22;
+    width: 678px;
+    margin-bottom: 55px;
   }
 }
 
@@ -120,6 +123,7 @@
 
 @media (min-width: $tablet-width) {
   .example__list {
+    width: 366px;
     margin: 0;
   }
 }
@@ -213,17 +217,36 @@
 
 @media (min-width: $tablet-width) {
   .example__count {
-    @include font-style__promo-text-tablet;
     width: 190px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__count {
+    width: auto;
+    padding-top: 0;
+    flex-direction: row;
+    text-align: left;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .example__count {
-    width: auto;
-    text-align: left;
-    align-self: flex-start;
+  .example__count-text {
+    @include font-style__promo-text-tablet;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__count-text {
+    margin-right: 65px;
+    margin-bottom: 0;
   }
 }
 
