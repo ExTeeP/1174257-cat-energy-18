@@ -63,7 +63,7 @@
   &:hover {
     opacity: 0.8;
   }
-  
+
   &:active {
     opacity: 0.6;
   }
@@ -71,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .header__logo-link {
-    width: 174px; 
+    width: 174px;
     min-height: 59px;
     margin-left: 0;
   }

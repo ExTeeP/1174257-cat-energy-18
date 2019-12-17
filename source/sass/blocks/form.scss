@@ -66,7 +66,7 @@
 @media (min-width: $desktop-width) {
   .form__wrapper-down {
     display: flex;
-  } 
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 83px;
-  } 
+  }
 }
 
 .form__cat {
@@ -121,7 +121,6 @@
 .form__feedback {
   margin: 0;
   margin-bottom: 32px;
-  padding: 0;
   padding: $mobile-padding;
   border: none;
 }
@@ -142,7 +141,6 @@
 .form__comment {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0;
   padding: $mobile-padding;
   display: flex;
   border: none;
@@ -202,7 +200,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  
+
   &--cat {
     height: 45px;
     margin-bottom: 14px;
@@ -242,7 +240,6 @@
 
 @media (min-width: $tablet-width) {
   .form__item {
-
     &--cat {
       height: 52px;
       margin-bottom: 20px;
@@ -301,7 +298,7 @@
   text-align: left;
   text-transform: uppercase;
   color: $text-color-third;
-  
+
   &--text {
     margin-right: 15px;
   }
@@ -319,7 +316,7 @@
       border-radius: 50%;
       border: 1px solid $border-color-second;
     }
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -344,7 +341,7 @@
       left: 0;
       border: 1px solid $border-color-second;
     }
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -354,7 +351,7 @@
       left: 5px;
       background-image: url("../../img/icon-tick.svg");
       background-repeat: no-repeat;
-      background-position: 0 0;      
+      background-position: 0 0;
     }
   }
 }
@@ -362,19 +359,19 @@
 @media (min-width: $tablet-width) {
   .form__label {
     @include font-style__menu;
-    
+
     &--text {
       margin-right: 17px;
     }
-  
+
     &--radio {
       padding-left: 38px;
-  
+
       &::before {
         width: 40px;
         height: 40px;
       }
-    
+
       &::after {
         width: 18px;
         height: 18px;
@@ -382,20 +379,20 @@
         left: 11px;
       }
     }
-  
+
     &--checkbox {
       padding-left: 38px;
-  
+
       &::before {
         width: 40px;
         height: 40px;
       }
-    
+
       &::after {
         width: 21px;
         height: 16px;
         top: 12px;
-        left: 10px;    
+        left: 10px;
       }
     }
   }
@@ -426,7 +423,6 @@
 
 @media (min-width: $tablet-width) {
   .form__input {
-
     &--text {
       @include font-style__menu;
       height: 52px;

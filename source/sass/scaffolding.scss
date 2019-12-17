@@ -9,11 +9,11 @@ html {
 }
 
 body {
+  @include font-style__5;
   min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: $font-main;
-  @include font-style__5;
   color: $text-color-main;
   background-color: $color-main;
 }
