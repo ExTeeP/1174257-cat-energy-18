@@ -204,7 +204,6 @@
 }
 
 .example__count {
-  @include font-style__11;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -234,6 +233,10 @@
     flex-direction: row;
     text-align: left;
   }
+}
+
+.example__count-text {
+  @include font-style__11;
 }
 
 @media (min-width: $tablet-width) {

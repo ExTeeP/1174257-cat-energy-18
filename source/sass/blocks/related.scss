@@ -1,5 +1,6 @@
 .related {
   background-color: $color-main;
+  margin-bottom: 76px;
 }
 
 .related__title {
@@ -22,7 +23,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .related__title {
+    @include font-style__2;
+    margin-left: 37px;
+    margin-bottom: 82px;
+  }
+}
+
 .related__list {
   @include list-style;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .related__list {
+    margin-bottom: 69px;
+  }
 }

@@ -4,7 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    background-color: $color-main;
+    background-color: $color-third;
   }
 }
 
@@ -42,12 +42,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding: 65px 70px;
+    margin-bottom: 60px;
+    padding: 0 40px;
+    padding-top: 65px;
     justify-content: space-between;
-    background-color: $color-main;
+    background-color: $color-third;
 
     &--map {
       height: 400px;
+      margin: 0;
       padding: 0;
       background-color: $color-third;
     }
