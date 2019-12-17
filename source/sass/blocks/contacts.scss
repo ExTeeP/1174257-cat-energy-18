@@ -60,7 +60,10 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 570px;
-    padding: 63px 80px;
+    margin: 0;
+    padding: 63px 0;
+    padding-left: 76px;
+    padding-right: 84px;
     position: absolute;
     top: 95px;
     left: 40px;
@@ -110,6 +113,12 @@
     @include font-style__12;
     width: 160px;
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text {
+    text-align: left;
   }
 }
 

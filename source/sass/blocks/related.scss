@@ -3,6 +3,12 @@
   margin-bottom: 76px;
 }
 
+@media (min-width: $desktop-width) {
+  .related {
+    margin-bottom: 86px;
+  }
+}
+
 .related__title {
   @include font-style__9;
   margin: 0;
@@ -31,6 +37,20 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .related__title {
+    margin: 0;
+    margin-bottom: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .related__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .related__list {
   @include list-style;
   margin-bottom: 39px;
@@ -39,5 +59,13 @@
 @media (min-width: $tablet-width) {
   .related__list {
     margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .related__list {
+    flex-grow: 1;
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }
