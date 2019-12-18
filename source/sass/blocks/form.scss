@@ -6,7 +6,7 @@
   @include font-style__9;
   position: relative;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   color: $text-color-main;
 
   // &::after {
@@ -33,7 +33,7 @@
 }
 
 .form__wrapper {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,7 +120,7 @@
 
 .form__feedback {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   padding: $mobile-padding;
   border: none;
 }
@@ -140,7 +140,7 @@
 
 .form__comment {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: $mobile-padding;
   display: flex;
   border: none;
@@ -295,6 +295,7 @@
 
 .form__label {
   @include font-style__label;
+  flex-shrink: 0;
   text-align: left;
   text-transform: uppercase;
   color: $text-color-third;
@@ -403,7 +404,9 @@
 
   &--text {
     @include font-style__label;
+    min-width: 140px;
     height: 45px;
+    padding: 0;
     padding-left: 15px;
     flex-grow: 1;
     font-family: $font-main;

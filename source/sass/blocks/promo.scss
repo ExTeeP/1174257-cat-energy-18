@@ -167,14 +167,14 @@
 
 @media (min-width: $tablet-width) {
   .promo__btn {
+    width: 245px;
+    height: 52px;
     margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__btn {
-    width: 245px;
-    min-height: 52px;
     margin-left: 80px;
   }
 }
