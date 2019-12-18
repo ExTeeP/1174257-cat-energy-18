@@ -162,7 +162,7 @@
     margin-right: 70px;
     margin-left: 0;
     padding-top: 0;
-    z-index: 1;
+    z-index: 2;
 
     &--number-1::after {
       @include font-style__XXX;
@@ -171,8 +171,9 @@
       position: absolute;
       top: -40px;
       left: 118px;
+      font-family: $font-main;
       color: $color-third;
-      z-index: 0;
+      z-index: 1;
     }
   }
 }
