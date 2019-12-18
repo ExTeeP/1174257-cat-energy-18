@@ -60,14 +60,14 @@
       top: 90px;
       left: 445px;
     }
-  
+
     &--slim-img::after {
       width: 141px;
       height: 194px;
       top: 80px;
       left: 476px;
     }
-  
+
     &--pro-img::after {
       width: 268px;
       height: 113px;
@@ -134,7 +134,7 @@
     &--pro {
       margin-right: 251px;
     }
-    
+
     &--divider::after {
       content: none;
     }
@@ -146,7 +146,7 @@
   position: relative;
   text-transform: uppercase;
   color: $text-color-main;
-  
+
   &--arrow::after {
     content: "";
     width: 25px;
