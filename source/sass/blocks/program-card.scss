@@ -3,6 +3,7 @@
   min-height: 266px;
   position: relative;
   padding: 20px;
+  padding-top: 30px;
   background-color: $color-third;
 
   &--marker::before {
@@ -47,11 +48,32 @@
     width: 708px;
     min-height: 372px;
     position: relative;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-right: 60px;
-    padding-bottom: 80px;
-    padding-left: 55px;
+    padding-bottom: 60px;
+    padding-left: 53px;
     background-color: $color-third;
+
+    &--marker::before {
+      width: 200px;
+      height: 200px;
+      top: 90px;
+      left: 445px;
+    }
+  
+    &--slim-img::after {
+      width: 141px;
+      height: 194px;
+      top: 80px;
+      left: 476px;
+    }
+  
+    &--pro-img::after {
+      width: 268px;
+      height: 113px;
+      top: 135px;
+      left: 412px;
+    }
   }
 }
 
@@ -71,17 +93,25 @@
 .program-card__title {
   @include font-style__4;
   margin: 0;
-  margin-top: 10px;
   margin-bottom: 30px;
   margin-left: 72px;
   text-transform: uppercase;
   color: $text-color-main;
 }
 
+@media (min-width: $tablet-width) {
+  .program-card__title {
+    @include font-style__42;
+    margin: 0;
+    margin-right: 251px;
+    margin-bottom: 24px;
+  }
+}
+
 .program-card__text {
   @include font-style__5;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   font-family: $font-second;
   color: $text-color-fourth;
   text-align: left;
@@ -95,20 +125,54 @@
   }
 }
 
-.program-card__btn {
-  @include font-style__15;
-  display: block;
-  width: 140px;
-  text-transform: uppercase;
-  color: $text-color-main;
+@media (min-width: $tablet-width) {
+  .program-card__text {
+    @include font-style__22;
+    margin-right: 215px;
+    margin-bottom: 58px;
+
+    &--pro {
+      margin-right: 251px;
+    }
+    
+    &--divider::after {
+      content: none;
+    }
+  }
 }
 
-// @media (min-width: $tablet-width) {
-//   .program-card {
-//     width: 708px;
-//     min-height: 372px;
-//   }
-// }
+.program-card__btn {
+  @include font-style__15;
+  position: relative;
+  text-transform: uppercase;
+  color: $text-color-main;
+  
+  &--arrow::after {
+    content: "";
+    width: 25px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -36px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-card__btn {
+    @include font-style__promo-text-tablet;
+
+    &--arrow::after {
+      width: 24px;
+      height: 11px;
+      top: 9px;
+      right: -46px;
+    }
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .program-card {

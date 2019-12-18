@@ -87,3 +87,66 @@
   color: $text-color-main;
   text-transform: uppercase;
 }
+<<<<<<< Updated upstream
+=======
+
+@media (min-width: $tablet-width) {
+  .example__count {
+    width: 190px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__count {
+    width: auto;
+    padding-top: 0;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.example__count-text {
+  @include font-style__11;
+}
+
+@media (min-width: $tablet-width) {
+  .example__count-text {
+    @include font-style__promo-text-tablet;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__count-text {
+    margin-right: 65px;
+    margin-bottom: 0;
+  }
+}
+
+.example__slider {
+  background-color: $color-third;
+}
+
+@media (min-width: $tablet-width) {
+  .example__slider {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: $tablet-padding;
+  // padding-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__slider {
+    width: 650px;
+    margin: 0;
+    padding: 0;
+  }
+}
+>>>>>>> Stashed changes

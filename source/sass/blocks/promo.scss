@@ -165,13 +165,23 @@
 }
 
 @media (min-width: $tablet-width) {
+<<<<<<< Updated upstream
   .promo__link {
+=======
+  .promo__btn {
+    width: 245px;
+    height: 52px;
+>>>>>>> Stashed changes
     margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
+<<<<<<< Updated upstream
   .promo__link {
+=======
+  .promo__btn {
+>>>>>>> Stashed changes
     margin-left: 80px;
   }
 }

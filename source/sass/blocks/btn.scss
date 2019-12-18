@@ -17,8 +17,11 @@
 
 @media (min-width: $tablet-width) {
   .btn {
+<<<<<<< Updated upstream
     width: 245px;
     min-height: 52px;
+=======
+>>>>>>> Stashed changes
     @include font-style__promo-text-tablet;
   }
 }

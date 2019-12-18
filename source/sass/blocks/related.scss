@@ -1,5 +1,15 @@
 .related {
   background-color: $color-main;
+<<<<<<< Updated upstream
+=======
+  margin-bottom: 35px;
+}
+
+@media (min-width: $desktop-width) {
+  .related {
+    margin-bottom: 86px;
+  }
+>>>>>>> Stashed changes
 }
 
 .related__title {

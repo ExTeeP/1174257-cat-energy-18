@@ -1,12 +1,33 @@
 .product-related {
   min-height: 130px;
   margin-top: -1px;
+  padding-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid $border-color;
 
+<<<<<<< Updated upstream
   &:first-child {
+=======
+@media (min-width: $tablet-width) {
+  .product-related {
+    padding: 26px 36px  27px 37px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related {
+    padding: 16px 0 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+>>>>>>> Stashed changes
     border-top: 1px solid $border-color;
   }
 }
@@ -15,6 +36,7 @@
 .product-related__title {
   @include font-style__12;
   margin: 0;
+  margin-bottom: 10px;
   text-align: left;
   color: $text-color-third;
   text-transform: uppercase;
@@ -22,7 +44,88 @@
 
 .product-related__desc {
   @include font-style__17;
+  margin-bottom: 15px;
+  display: flex;
   font-family: $font-second;
   text-align: left;
   color: $text-color-fourth;
 }
+<<<<<<< Updated upstream
+=======
+
+@media (min-width: $tablet-width) {
+  .product-related__desc {
+    @include font-style__12;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related__desc {
+    width: 325px;
+  }
+}
+
+.product-related__desc-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-related__desc-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-related__desc-cell {
+  padding: 0;
+
+  &--name {
+    text-align: left;
+  }
+
+  &--value {
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-related__desc-cell {
+    margin-right: 45px;
+
+    &--value {
+      margin-right: 0;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related__desc-cell {
+    margin: 0;
+
+    &--value {
+      margin-right: 35px;
+      text-align: left;
+    }
+  }
+}
+
+.product-related__btn {
+  margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-related__btn {
+    width: 633px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related__btn {
+    width: 245px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+}
+>>>>>>> Stashed changes

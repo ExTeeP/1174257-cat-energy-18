@@ -1,11 +1,25 @@
 .application {
   margin-bottom: 30px;
+<<<<<<< Updated upstream
+=======
+  padding-top: 14px;
+>>>>>>> Stashed changes
   background-color: $color-main;
 }
 
 .application__form {
   width: 320px;
   margin: 0 auto;
+}
+
+.application__wrapper {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .application__wrapper {
+    margin-bottom: 66px;
+  }
 }
 
 .application__title {
@@ -20,9 +34,48 @@
 .application__text {
   @include font-style__5;
   margin: 0;
+<<<<<<< Updated upstream
   margin-bottom: 40px;
   width: 270px;
+=======
+>>>>>>> Stashed changes
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main;
 }
+<<<<<<< Updated upstream
+=======
+
+@media (min-width: $tablet-width) {
+  .application__text {
+    @include font-style__32;
+    width: 350px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application__text {
+    margin-left: 0;
+  }
+}
+
+.application__form {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .application__form {
+    width: auto;
+    padding: $form-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application__form {
+    width: $desktop-width;
+    padding: $desktop-padding;
+  }
+}
+>>>>>>> Stashed changes

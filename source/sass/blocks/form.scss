@@ -6,7 +6,7 @@
   @include font-style__9;
   position: relative;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   color: $text-color-main;
 
   // &::after {
@@ -21,6 +21,65 @@
   // }
 }
 
+<<<<<<< Updated upstream
+=======
+@media (min-width: $tablet-width) {
+  .form__title {
+    @include font-style__2;
+    margin-bottom: 77px;
+
+    &--position {
+      margin-bottom: 58px;
+    }
+  }
+}
+
+.form__wrapper {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+    margin-bottom: 68px;
+  }
+}
+
+.form__wrapper-down {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: $mobile-padding;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper-down {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-down {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-btn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 83px;
+  }
+}
+
+>>>>>>> Stashed changes
 .form__cat {
   margin: 0;
   margin-bottom: 23px;
@@ -38,16 +97,24 @@
 
 .form__feedback {
   margin: 0;
+<<<<<<< Updated upstream
   margin-bottom: 32px;
   padding: 0;
+=======
+  margin-bottom: 28px;
+>>>>>>> Stashed changes
   padding: $mobile-padding;
   border: none;
 }
 
 .form__comment {
   margin: 0;
+<<<<<<< Updated upstream
   margin-bottom: 30px;
   padding: 0;
+=======
+  margin-bottom: 28px;
+>>>>>>> Stashed changes
   padding: $mobile-padding;
   border: none;
 }
@@ -108,6 +175,7 @@
 
 .form__label {
   @include font-style__label;
+  flex-shrink: 0;
   text-align: left;
   text-transform: uppercase;
   color: $text-color-third;
@@ -174,7 +242,9 @@
 
   &--text {
     @include font-style__label;
+    min-width: 140px;
     height: 45px;
+    padding: 0;
     padding-left: 15px;
     flex-grow: 1;
     font-family: $font-main;
