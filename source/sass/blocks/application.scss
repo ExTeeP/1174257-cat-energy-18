@@ -1,15 +1,39 @@
 .application {
+<<<<<<< HEAD
   margin-bottom: 30px;
 <<<<<<< Updated upstream
 =======
   padding-top: 14px;
 >>>>>>> Stashed changes
+=======
+  margin-bottom: 31px;
+  padding-top: 14px;
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   background-color: $color-main;
 }
 
-.application__form {
-  width: 320px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .application {
+    padding-top: 0;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application {
+    padding-top: 47px;
+    margin-bottom: 67px;
+  }
+}
+
+.application__wrapper {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .application__wrapper {
+    margin-bottom: 66px;
+  }
 }
 
 .application__wrapper {
@@ -25,26 +49,40 @@
 .application__title {
   @include font-style__title;
   margin: 0;
-  margin-top: 15px;
   margin-bottom: 25px;
   text-align: left;
-  color: $text-color-main
+  color: $text-color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .application__title {
+    @include font-style__promo-title;
+    margin-bottom: 56px;
+  }
 }
 
 .application__text {
   @include font-style__5;
+<<<<<<< HEAD
   margin: 0;
 <<<<<<< Updated upstream
   margin-bottom: 40px;
   width: 270px;
 =======
 >>>>>>> Stashed changes
+=======
+  width: 270px;
+  margin: 0;
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
 @media (min-width: $tablet-width) {
   .application__text {
@@ -78,4 +116,7 @@
     padding: $desktop-padding;
   }
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b

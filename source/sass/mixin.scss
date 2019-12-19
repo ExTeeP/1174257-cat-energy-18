@@ -37,6 +37,13 @@
   line-height: 36px;
 }
 
+@mixin font-style__25 {
+  // заголовок промо блока
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
 @mixin font-style__4 {
   // заголовок в карточке программы
   font-size: 24px;
@@ -49,6 +56,13 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+}
+
+@mixin font-style__32 {
+  // текст формы
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 @mixin font-style__menu-desktop {

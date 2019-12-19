@@ -5,8 +5,14 @@
 @media (min-width: $tablet-width) {
   .advantages {
     margin-bottom: 0;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
     border-bottom: 1px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    border-bottom: none;
   }
 }
 
@@ -61,7 +67,7 @@
     width: 60px;
     height: 60px;
     top: 0;
-    left: 0px;
+    left: 0;
     background-color: $color-second;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -94,7 +100,7 @@
     min-height: 240px;
     margin-right: 30px;
     margin-bottom: 20px;
-    
+
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -132,7 +138,7 @@
     &:nth-child(2n) {
       margin-right: 25px;
     }
-    
+
     &:nth-child(4n) {
       margin-right: 0;
     }
@@ -151,10 +157,12 @@
 
 @media (min-width: $tablet-width) {
   .advantages__text {
+    @include font-style__22;
     margin-top: 110px;
     margin-right: 70px;
     margin-left: 0;
     padding-top: 0;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     @include font-style__22;
 =======
@@ -171,5 +179,20 @@
     //   z-index: 0;
     // }
 >>>>>>> Stashed changes
+=======
+    z-index: 2;
+
+    &--number-1::after {
+      @include font-style__XXX;
+      content: "1";
+      display: block;
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      font-family: $font-main;
+      color: $color-third;
+      z-index: 1;
+    }
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   }
 }

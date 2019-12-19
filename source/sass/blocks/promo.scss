@@ -25,6 +25,7 @@
 @media (min-width: $tablet-width) {
   .promo__wrapper {
     background-color: $color-main;
+    margin-bottom: 28px;
   }
 }
 
@@ -33,6 +34,7 @@
   min-height: 305px;
   margin: 0 auto;
   margin-bottom: 135px;
+  padding: $mobile-padding;
   padding-top: 25px;
   padding-bottom: 140px;
   position: relative;
@@ -48,7 +50,7 @@
   .promo__inner {
     width: $tablet-width;
     min-height: auto;
-    margin-bottom: 28px;
+    margin-bottom: 0;
     padding: $tablet-padding;
     display: flex;
     flex-direction: column;
@@ -68,6 +70,7 @@
 
 .promo__title {
   @include font-style__2;
+  width: 280px; //для IE
   margin: 0;
   margin-bottom: 25px;
   color: $text-color-second;
@@ -77,7 +80,8 @@
 @media (min-width: $tablet-width) {
   .promo__title {
     @include font-style__promo-title;
-    margin-right: 200px;
+    width: 500px;  //для IE
+    margin-right: auto;  //для IE
     margin-bottom: 42px;
     margin-left: 90px;
     text-align: left;
@@ -88,7 +92,6 @@
 @media (min-width: $desktop-width) {
   .promo__title {
     @include font-style__promo-title;
-    margin-right: 700px;
     margin-bottom: 43px;
     margin-left: 80px;
     text-align: left;
@@ -97,6 +100,7 @@
 
 .promo__text {
   @include font-style__17;
+  width: 280px; //для IE
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -107,6 +111,7 @@
 @media (min-width: $tablet-width) {
   .promo__text {
     @include font-style__promo-text-tablet;
+    width: auto;
     margin-right: 300px;
     margin-bottom: 20px;
     margin-left: 90px;
@@ -136,8 +141,8 @@
 
 @media (min-width: $tablet-width) {
   .promo__img {
-    width: 709px;
-    height: 609px;
+    width: 552px;
+    height: 499px;
     position: absolute;
     margin-left: 0;
     bottom: -606px;
@@ -156,7 +161,8 @@
   }
 }
 
-.promo__link {
+.promo__btn {
+  width: 280px;
   margin-bottom: 10px;
 
   &:last-child {
@@ -165,6 +171,7 @@
 }
 
 @media (min-width: $tablet-width) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   .promo__link {
 =======
@@ -172,102 +179,26 @@
     width: 245px;
     height: 52px;
 >>>>>>> Stashed changes
+=======
+  .promo__btn {
+    @include font-style__promo-text-tablet;
+    width: 245px;
+    height: 52px;
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   .promo__link {
 =======
   .promo__btn {
 >>>>>>> Stashed changes
+=======
+  .promo__btn {
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-left: 80px;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__wrapper--btn {
-//     background-color: $bg-page;
-//     width: 709px;
-//     height: 609px;
-//     align-items: flex-start;
-//     padding: 30px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo {}
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__wrapper--bg-cat {
-//     min-height: 197px;
-//     margin: 0;
-//     padding-bottom: 20px;
-//     background: none;
-//     background-color: $bg-page;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__wrapper--bg-cat {}
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__title {
-//     margin: 0;
-//     margin-bottom: 35px;
-//     padding: 0 120px;
-//     font-size: 60px;
-//     line-height: 60px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__title {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__text {
-//     margin: 0;
-//     margin-bottom: 20px;
-//     padding: 0 120px;
-//     font-size: 20px;
-//     line-height: 20px;
-//     text-align: left;
-//     color: #111111;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__text {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__img {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__img {
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-promo__link {
-//     margin-left: 90px;
-//     background-color: $bg-third;
-//     padding: 5px 20px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-promo__link {
-//   }
-// }

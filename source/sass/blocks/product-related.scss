@@ -1,15 +1,19 @@
 .product-related {
-  min-height: 130px;
   margin-top: -1px;
   padding-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+}
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   &:first-child {
 =======
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 @media (min-width: $tablet-width) {
   .product-related {
     padding: 26px 36px  27px 37px;
@@ -17,6 +21,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid $border-color;
+<<<<<<< HEAD
   }
 }
 
@@ -29,9 +34,22 @@
     border: none;
 >>>>>>> Stashed changes
     border-top: 1px solid $border-color;
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product-related {
+    padding: 16px 0 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+}
 
 .product-related__title {
   @include font-style__12;
@@ -42,6 +60,20 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .product-related__title {
+    @include font-style__menu;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related__title {
+    width: 325px;
+    margin-bottom: 0;
+  }
+}
+
 .product-related__desc {
   @include font-style__17;
   margin-bottom: 15px;
@@ -50,8 +82,11 @@
   text-align: left;
   color: $text-color-fourth;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
 @media (min-width: $tablet-width) {
   .product-related__desc {
@@ -90,7 +125,11 @@
 
 @media (min-width: $tablet-width) {
   .product-related__desc-cell {
+<<<<<<< HEAD
     margin-right: 45px;
+=======
+    margin-right: 52px;
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
     &--value {
       margin-right: 0;
@@ -117,6 +156,10 @@
 @media (min-width: $tablet-width) {
   .product-related__btn {
     width: 633px;
+<<<<<<< HEAD
+=======
+    min-height: 40px;
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-bottom: 0;
   }
 }
@@ -124,8 +167,13 @@
 @media (min-width: $desktop-width) {
   .product-related__btn {
     width: 245px;
+<<<<<<< HEAD
     height: 40px;
     margin-bottom: 0;
   }
 }
 >>>>>>> Stashed changes
+=======
+  }
+}
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b

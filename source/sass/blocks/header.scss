@@ -63,7 +63,7 @@
   &:hover {
     opacity: 0.8;
   }
-  
+
   &:active {
     opacity: 0.6;
   }
@@ -71,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .header__logo-link {
-    width: 174px; 
+    width: 174px;
     min-height: 59px;
     margin-left: 0;
   }
@@ -138,29 +138,3 @@
     display: none;
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .page-header {
-//     display: flex;
-//     padding-bottom: 113px;
-//   }
-
-//   .page-header__wrapper {
-//     min-width: 1200px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-
-//   .page-header__logo {
-//     display: flex;
-//     align-items: stretch;
-//     justify-content: flex-start;
-//     border-bottom: none;
-//     min-height: 60px;
-//   }
-
-//   .page-header__nav {
-//     display: flex;
-//   }
-// }

@@ -60,14 +60,22 @@
       top: 90px;
       left: 445px;
     }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     &--slim-img::after {
       width: 141px;
       height: 194px;
       top: 80px;
       left: 476px;
     }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     &--pro-img::after {
       width: 268px;
       height: 113px;
@@ -87,6 +95,27 @@
     padding-bottom: 60px;
     padding-left: 50px;
     background-color: $color-third;
+
+    &--marker::before {
+      width: 100px;
+      height: 100px;
+      top: 90px;
+      left: 445px;
+    }
+
+    &--slim-img::after {
+      width: 71px;
+      height: 97px;
+      top: 80px;
+      left: 476px;
+    }
+
+    &--pro-img::after {
+      width: 134px;
+      height: 57px;
+      top: 135px;
+      left: 412px;
+    }
   }
 }
 
@@ -134,7 +163,11 @@
     &--pro {
       margin-right: 251px;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     &--divider::after {
       content: none;
     }
@@ -146,7 +179,11 @@
   position: relative;
   text-transform: uppercase;
   color: $text-color-main;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   &--arrow::after {
     content: "";
     width: 25px;
@@ -173,6 +210,7 @@
     }
   }
 }
+<<<<<<< HEAD
 
 // @media (min-width: $desktop-width) {
 //   .program-card {
@@ -181,3 +219,5 @@
 //     flex-direction: row;
 //   }
 // }
+=======
+>>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
