@@ -99,7 +99,7 @@
 
 @media (min-width: $tablet-width) {
   .product-related__desc-cell {
-    margin-right: 45px;
+    margin-right: 52px;
 
     &--value {
       margin-right: 0;
@@ -126,6 +126,7 @@
 @media (min-width: $tablet-width) {
   .product-related__btn {
     width: 633px;
+    min-height: 40px;
     margin-bottom: 0;
   }
 }
@@ -133,7 +134,5 @@
 @media (min-width: $desktop-width) {
   .product-related__btn {
     width: 245px;
-    height: 40px;
-    margin-bottom: 0;
   }
 }

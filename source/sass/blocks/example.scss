@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-top: 40px;
+    padding-top: 42px;
     background-color: $color-main;
   }
 }
@@ -103,7 +103,7 @@
   .example__text {
     @include font-style__22;
     width: 678px;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
 }
 
@@ -156,6 +156,7 @@
     width: 162px;
     height: 72px;
     margin-right: 42px;
+    padding: 14px;
   }
 }
 
@@ -179,12 +180,11 @@
   @include font-style__10;
   position: absolute;
   display: block;
-  min-width: 87px;
-  min-height: 24px;
+  width: 85px;
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
   top: 46px;
-  left: 20px;
+  left: 18px;
   font-family: $font-second;
   text-align: center;
   color: $text-color-fourth;
@@ -194,11 +194,11 @@
 @media (min-width: $tablet-width) {
   .example__desc-small {
     @include font-style__17;
-    min-width: 114px;
-    min-height: 27px;
-    padding: 0 10px;
-    top: 46px;
-    left: 20px;
+    width: auto;
+    padding: 0 8px;
+    top: 62px;
+    left: auto;
+    align-self: center;
     background-color: $color-main;
   }
 }
