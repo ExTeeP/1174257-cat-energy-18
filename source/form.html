@@ -35,7 +35,7 @@
     <main class="page">
 
       <section class="application">
-        <div class="container">
+        <div class="container application__wrapper">
           <h2 class="application__title">Подбор программы</h2>
           <p class="application__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
@@ -80,7 +80,7 @@
 
           <fieldset class="form__feedback">
               <legend class="form__title">Контактные данные (владельца&nbsp;кота)</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--feedback">
                 <li class="form__item form__item--feedback">
                   <label class="form__label form__label--text" for="textfield-4">E-mail:<sup>*</sup></label>
                   <input class="form__input form__input--text" type="email" name="client-email" id="textfield-4" placeholder="kuklachev@gmail.com" required>
@@ -98,8 +98,8 @@
           </fieldset>
 
           <fieldset class="form__additional">
-              <legend class="form__title">Дополнительно</legend>
-              <ul class="form__list">
+              <legend class="form__title form__title--position">Дополнительно</legend>
+              <ul class="form__list form__list--additional">
                 <li class="form__item form__item--additional">
                   <input class="form__input form__input--checkbox" type="checkbox" name="sugar" id="checkbox-1" value="on" checked>
                   <label class="form__label form__label--checkbox" for="checkbox-1">Сахарозаменитель</label>
@@ -118,14 +118,16 @@
                 </li>
               </ul>
           </fieldset>
-          <div class="container">
-            <button class="btn form__btn" type="submit">Отправить заявку</button>
+          <div class="form__wrapper-down">
+            <div class="form__wrapper-btn">
+              <button class="btn form__btn" type="submit">Отправить заявку</button>
+            </div>
             <p class="form__note"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
       </section>
 
-      <section class="contacts contacts--mobile">
+      <section class="contacts">
         <div class="container contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper">

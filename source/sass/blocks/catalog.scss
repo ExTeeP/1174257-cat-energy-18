@@ -6,7 +6,15 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    margin-bottom: 7px;
     padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 14px;
+    padding-top: 47px;
   }
 }
 
@@ -30,7 +38,7 @@
   @include font-style__title;
   margin: 0;
   margin-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-align: left;
   color: $text-color-main;
 }
@@ -68,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .catalog__item {
     margin-right: 80px;
-    margin-bottom: 58px;
+    margin-bottom: 61px;
 
     &:nth-child(2n) {
       margin-right: 80px;

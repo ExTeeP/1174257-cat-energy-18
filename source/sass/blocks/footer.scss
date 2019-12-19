@@ -5,23 +5,28 @@
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     min-height: 150px;
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
 .footer__logo {
   height: 94px;
+  padding-top: 38px;  //для IE
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;  //для IE
   border-bottom: 1px solid $border-color-second;
 }
 
 @media (min-width: $tablet-width) {
   .footer__logo {
+    padding-top: 0;  //для IE
     height: auto;
     border: none;
+    align-items: center;  //для IE
   }
 }
 
@@ -40,4 +45,3 @@
     border: none;
   }
 }
-

@@ -1,28 +1,86 @@
 .application {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  padding-top: 14px;
   background-color: $color-main;
 }
 
-.application__form {
-  width: 320px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .application {
+    padding-top: 0;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application {
+    padding-top: 47px;
+    margin-bottom: 67px;
+  }
+}
+
+.application__wrapper {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .application__wrapper {
+    margin-bottom: 66px;
+  }
 }
 
 .application__title {
   @include font-style__title;
   margin: 0;
-  margin-top: 15px;
   margin-bottom: 25px;
   text-align: left;
-  color: $text-color-main
+  color: $text-color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .application__title {
+    @include font-style__promo-title;
+    margin-bottom: 56px;
+  }
 }
 
 .application__text {
   @include font-style__5;
-  margin: 0;
-  margin-bottom: 40px;
   width: 270px;
+  margin: 0;
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .application__text {
+    @include font-style__32;
+    width: 350px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application__text {
+    margin-left: 0;
+  }
+}
+
+.application__form {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .application__form {
+    width: auto;
+    padding: $form-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application__form {
+    width: $desktop-width;
+    padding: $desktop-padding;
+  }
 }
