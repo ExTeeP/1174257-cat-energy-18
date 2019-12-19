@@ -17,8 +17,8 @@
 
 @media (min-width: $tablet-width) {
   .btn {
-    @include font-style__promo-text-tablet;
+    @include font-style__12;
     width: 245px;
-    min-height: 52px;
+    min-height: 40px;
   }
 }

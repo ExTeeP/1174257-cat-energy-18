@@ -172,6 +172,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__btn {
+    @include font-style__promo-text-tablet;
     width: 245px;
     height: 52px;
     margin-left: 90px;
