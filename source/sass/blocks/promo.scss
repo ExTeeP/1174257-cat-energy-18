@@ -171,34 +171,16 @@
 }
 
 @media (min-width: $tablet-width) {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  .promo__link {
-=======
-  .promo__btn {
-    width: 245px;
-    height: 52px;
->>>>>>> Stashed changes
-=======
   .promo__btn {
     @include font-style__promo-text-tablet;
     width: 245px;
     height: 52px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  .promo__link {
-=======
   .promo__btn {
->>>>>>> Stashed changes
-=======
-  .promo__btn {
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-left: 80px;
   }
 }
