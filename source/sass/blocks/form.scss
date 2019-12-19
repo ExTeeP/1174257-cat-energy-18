@@ -64,11 +64,6 @@
     width: auto;
     margin: 0;
     padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__wrapper-down {
     display: flex;
   }
 }
@@ -173,7 +168,7 @@
 @media (min-width: $tablet-width) {
   .form__additional {
     padding: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -370,7 +365,7 @@
     }
 
     &--radio {
-      padding-left: 38px;
+      padding-left: 46px;
 
       &::before {
         width: 40px;
@@ -386,7 +381,7 @@
     }
 
     &--checkbox {
-      padding-left: 38px;
+      padding-left: 45px;
 
       &::before {
         width: 40px;
@@ -488,6 +483,7 @@
 
 @media (min-width: $tablet-width) {
   .form__btn {
+    @include font-style__promo-text-tablet;
     width: 283px;
     height: 52px;
   }
@@ -512,6 +508,8 @@
 @media (min-width: $tablet-width) {
   .form__note {
     @include font-style__15;
+    margin-left: 63px;
+    padding-top: 15px;
   }
 }
 
