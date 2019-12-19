@@ -8,12 +8,6 @@
   border-bottom: 1px solid $border-color;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  &:first-child {
-=======
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 @media (min-width: $tablet-width) {
   .product-related {
     padding: 26px 36px  27px 37px;
@@ -21,7 +15,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid $border-color;
-<<<<<<< HEAD
   }
 }
 
@@ -32,10 +25,7 @@
     justify-content: flex-start;
     align-items: center;
     border: none;
->>>>>>> Stashed changes
     border-top: 1px solid $border-color;
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   }
 }
 
@@ -82,11 +72,6 @@
   text-align: left;
   color: $text-color-fourth;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
 @media (min-width: $tablet-width) {
   .product-related__desc {
@@ -125,11 +110,7 @@
 
 @media (min-width: $tablet-width) {
   .product-related__desc-cell {
-<<<<<<< HEAD
-    margin-right: 45px;
-=======
     margin-right: 52px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
     &--value {
       margin-right: 0;
@@ -156,24 +137,13 @@
 @media (min-width: $tablet-width) {
   .product-related__btn {
     width: 633px;
-<<<<<<< HEAD
-=======
     min-height: 40px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-related__btn {
-    width: 245px;
-<<<<<<< HEAD
-    height: 40px;
     margin-bottom: 0;
   }
 }
->>>>>>> Stashed changes
-=======
-  }
-}
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b

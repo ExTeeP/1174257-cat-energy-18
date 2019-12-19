@@ -162,24 +162,6 @@
     margin-right: 70px;
     margin-left: 0;
     padding-top: 0;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    @include font-style__22;
-=======
-    z-index: 1;
-
-    // &--number-1::after {
-    //   @include font-style__XXX;
-    //   content: "1";
-    //   display: block;
-    //   position: absolute;
-    //   top: -40px;
-    //   left: 118px;
-    //   color: $color-third;
-    //   z-index: 0;
-    // }
->>>>>>> Stashed changes
-=======
     z-index: 2;
 
     &--number-1::after {
@@ -193,6 +175,5 @@
       color: $color-third;
       z-index: 1;
     }
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   }
 }

@@ -25,11 +25,6 @@
   // }
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 @media (min-width: $tablet-width) {
   .form__title {
     @include font-style__2;
@@ -69,14 +64,11 @@
     width: auto;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__wrapper-down {
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     display: flex;
   }
 }
@@ -89,10 +81,6 @@
   }
 }
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 .form__cat {
   margin: 0;
   margin-bottom: 23px;
@@ -136,16 +124,7 @@
 
 .form__feedback {
   margin: 0;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  margin-bottom: 32px;
-  padding: 0;
-=======
   margin-bottom: 28px;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 28px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   padding: $mobile-padding;
   border: none;
 }
@@ -165,16 +144,7 @@
 
 .form__comment {
   margin: 0;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  margin-bottom: 30px;
-  padding: 0;
-=======
   margin-bottom: 28px;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 28px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   padding: $mobile-padding;
   display: flex;
   border: none;

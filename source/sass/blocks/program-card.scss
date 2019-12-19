@@ -60,22 +60,14 @@
       top: 90px;
       left: 445px;
     }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
+    
     &--slim-img::after {
       width: 141px;
       height: 194px;
       top: 80px;
       left: 476px;
     }
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
+    
     &--pro-img::after {
       width: 268px;
       height: 113px;
@@ -163,11 +155,7 @@
     &--pro {
       margin-right: 251px;
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
     &--divider::after {
       content: none;
     }
@@ -179,11 +167,7 @@
   position: relative;
   text-transform: uppercase;
   color: $text-color-main;
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   &--arrow::after {
     content: "";
     width: 25px;
@@ -210,14 +194,3 @@
     }
   }
 }
-<<<<<<< HEAD
-
-// @media (min-width: $desktop-width) {
-//   .program-card {
-//     width: 570px;
-//     min-height: 372px;
-//     flex-direction: row;
-//   }
-// }
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b

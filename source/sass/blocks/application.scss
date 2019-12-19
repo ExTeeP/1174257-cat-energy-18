@@ -1,14 +1,6 @@
 .application {
-<<<<<<< HEAD
-  margin-bottom: 30px;
-<<<<<<< Updated upstream
-=======
-  padding-top: 14px;
->>>>>>> Stashed changes
-=======
   margin-bottom: 31px;
   padding-top: 14px;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   background-color: $color-main;
 }
 
@@ -63,26 +55,12 @@
 
 .application__text {
   @include font-style__5;
-<<<<<<< HEAD
-  margin: 0;
-<<<<<<< Updated upstream
-  margin-bottom: 40px;
-  width: 270px;
-=======
->>>>>>> Stashed changes
-=======
   width: 270px;
   margin: 0;
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
   text-align: left;
   text-transform: uppercase;
   color: $text-color-main;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
 
 @media (min-width: $tablet-width) {
   .application__text {
@@ -116,7 +94,3 @@
     padding: $desktop-padding;
   }
 }
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 9f052d838f62f1dc01073cf4c3fd4209d072288b
