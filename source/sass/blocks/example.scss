@@ -1,12 +1,13 @@
 .example {
-  min-height: 705px;
   padding-top: 16px;
+  padding-bottom: 39px;
   background-color: $color-third;
 }
 
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 42px;
+    padding-bottom: 0;
     background-color: $color-main;
   }
 }
@@ -260,6 +261,7 @@
 @media (min-width: $tablet-width) {
   .example__slider {
     width: $tablet-width;
+    min-height: 462px;
     margin: 0 auto;
     padding: $tablet-padding;
   }

@@ -34,31 +34,28 @@
     display: inline-block;
     vertical-align: bottom;
     background-color: $color-main;
-    z-index: 2;
 
-
-    &::before {
+    &::before{
       content: "";
+      width: 5000px;
       height: 3px;
       display: block;
       position: absolute;
       top: 23px;
-      right: 0;
-      left: -137px;
+      left: -5039px;
       background-color: $color-second;
-      z-index: 1;
     }
-
-    // &::after {
-    //   content: "";
-    //   width: 100px;
-    //   height: 3px;
-    //   display: block;
-    //   position: absolute;
-    //   top: 23px;
-    //   right: -40px;
-    //   background-color: $color-second;
-    // }
+    
+    &::after {
+      content: "";
+      width: 5000px;
+      height: 3px;
+      display: block;
+      position: absolute;
+      top: 23px;
+      right: -5036px;
+      background-color: $color-second;
+    }
   }
 }
 

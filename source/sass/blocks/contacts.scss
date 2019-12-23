@@ -100,7 +100,6 @@
 
 .contacts__text {
   @include font-style__11;
-  display: block;
   width: 140px;
   margin: 0;
   padding: 0;
@@ -119,6 +118,14 @@
 @media (min-width: $desktop-width) {
   .contacts__text {
     text-align: left;
+  }
+}
+
+//для отступа между строками адреса, вместо br
+@media (min-width: $tablet-width) {
+  .contacts__text-span:first-child {
+    display: block;
+    margin-bottom: 19px;
   }
 }
 
