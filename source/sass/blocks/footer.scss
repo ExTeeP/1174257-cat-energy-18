@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding-top: 59px;
+  }
+}
+
 .footer__logo {
   height: 94px;
   padding-top: 38px;  //для IE

@@ -14,7 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    min-height: 462px;
     margin-top: 158px;
     padding: 0;
     background-color: $color-third;
@@ -35,6 +34,7 @@
     margin: 0 auto;
     padding: $desktop-padding;
     padding-top: 70px;
+    padding-bottom: 60px;
     position: relative;
     display: flex;
   }
@@ -60,7 +60,7 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    width: 650px;
+    width: 610px;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -204,6 +204,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__desc-small {
+    background-color: $color-third;
+  }
+}
+
 .example__count {
   margin: 0;
   margin-bottom: 15px;
@@ -261,7 +267,6 @@
 @media (min-width: $tablet-width) {
   .example__slider {
     width: $tablet-width;
-    min-height: 462px;
     margin: 0 auto;
     padding: $tablet-padding;
   }
@@ -269,7 +274,7 @@
 
 @media (min-width: $desktop-width) {
   .example__slider {
-    width: 650px;
+    width: 610px;
     margin: 0;
     padding: 0;
   }
