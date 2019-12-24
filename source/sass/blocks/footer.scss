@@ -5,10 +5,16 @@
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     min-height: 150px;
-    padding-top: 60px;
+    padding-top: 55px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding-top: 59px;
   }
 }
 

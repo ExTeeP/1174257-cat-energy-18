@@ -162,6 +162,7 @@
     margin-right: 70px;
     margin-left: 0;
     padding-top: 0;
+    position: relative;
     z-index: 2;
 
     &--number-1::after {
@@ -169,11 +170,53 @@
       content: "1";
       display: block;
       position: absolute;
-      top: -40px;
+      top: -150px;
       left: 118px;
       font-family: $font-main;
       color: $color-third;
-      z-index: 1;
+      z-index: -1;
     }
+
+    &--number-2::after {
+      @include font-style__XXX;
+      content: "2";
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 111px;
+      font-family: $font-main;
+      color: $color-third;
+      z-index: -1;
+    }
+
+    &--number-3::after {
+      @include font-style__XXX;
+      content: "3";
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 113px;
+      font-family: $font-main;
+      color: $color-third;
+      z-index: -1;
+    }
+
+    &--number-4::after {
+      @include font-style__XXX;
+      content: "4";
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 113px;
+      font-family: $font-main;
+      color: $color-third;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__text {
+    margin-right: 0;
   }
 }

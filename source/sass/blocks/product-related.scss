@@ -26,6 +26,17 @@
     align-items: center;
     border: none;
     border-top: 1px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-related {
+    padding: 16px 0 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
   }
 }
@@ -71,6 +82,7 @@
 @media (min-width: $desktop-width) {
   .product-related__desc {
     width: 325px;
+    margin-bottom: 0;
   }
 }
 
@@ -134,5 +146,6 @@
 @media (min-width: $desktop-width) {
   .product-related__btn {
     width: 245px;
+    margin-bottom: 0;
   }
 }

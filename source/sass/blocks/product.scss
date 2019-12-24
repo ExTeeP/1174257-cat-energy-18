@@ -66,6 +66,7 @@
   @include font-style__12;
   margin: 0;
   margin-bottom: 12px;
+  text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
 
@@ -81,6 +82,12 @@
     padding: 0 45px;
     margin-bottom: 26px;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding: 0 10px;
   }
 }
 

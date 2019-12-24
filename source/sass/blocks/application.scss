@@ -14,7 +14,17 @@
 @media (min-width: $desktop-width) {
   .application {
     padding-top: 47px;
-    margin-bottom: 67px;
+    margin-bottom: 64px;
+  }
+}
+
+.application__wrapper {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .application__wrapper {
+    margin-bottom: 66px;
   }
 }
 

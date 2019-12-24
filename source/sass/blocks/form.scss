@@ -1,28 +1,42 @@
 .form {
   background-color: $color-main;
+  overflow: hidden;
 }
 
 .form__title {
   @include font-style__9;
-  position: relative;
   padding: 0;
   margin-bottom: 34px;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
   color: $text-color-main;
 
   &--position {
     margin-bottom: 36px;
   }
 
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   width: 53px;
-  //   height: 3px;
-  //   top: 14px;
-  //   right: -20px;
-  //   background-color: $color-second;
-  // }
+  &::before{
+    content: "";
+    width: 5000px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: -5039px;
+    background-color: $color-second;
+  }
+  
+  &::after {
+    content: "";
+    width: 5000px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: -5042px;
+    background-color: $color-second;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -515,6 +529,7 @@
 
 @media (min-width: $desktop-width) {
   .form__note {
-    padding-top: 10px;
+    margin-left: 0;
+    padding-top: 20px;
   }
 }
