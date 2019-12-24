@@ -59,5 +59,9 @@
 @media (min-width: $desktop-width) {
   .gift__text {
     text-align: center;
+
+    &::before {
+      left: 96px;
+    }
   }
 }

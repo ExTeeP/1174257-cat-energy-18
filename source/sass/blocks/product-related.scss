@@ -82,6 +82,7 @@
 @media (min-width: $desktop-width) {
   .product-related__desc {
     width: 325px;
+    margin-bottom: 0;
   }
 }
 
@@ -144,6 +145,7 @@
 
 @media (min-width: $desktop-width) {
   .product-related__btn {
+    width: 245px;
     margin-bottom: 0;
   }
 }

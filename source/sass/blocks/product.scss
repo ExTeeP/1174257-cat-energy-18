@@ -85,6 +85,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding: 0 10px;
+  }
+}
+
 .product__name {
   display: block;
   text-align: left;
