@@ -428,6 +428,16 @@
     color: $text-color-fourth;
   }
 
+  &--number {
+    appearance: textfield;
+  }
+
+  &--number::-webkit-inner-spin-button,
+  &--number::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0; 
+  }
+
   &--radio {
     opacity: 0;
   }

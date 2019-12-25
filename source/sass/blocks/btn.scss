@@ -13,6 +13,15 @@
   background-color: $color-second;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-second--hover;
+  }
+
+  &:active {
+    color: $text-color-second--hover;
+    background-color: $color-second--hover;
+  }
 }
 
 @media (min-width: $tablet-width) {

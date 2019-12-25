@@ -185,15 +185,25 @@
 
   &--arrow::after {
     content: "";
+    display: block;
     width: 25px;
     height: 12px;
-    display: block;
     position: absolute;
     top: 5px;
     right: -36px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &--arrow:hover::after {
+    width: 34px;
+    right: -45px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -202,10 +212,12 @@
     @include font-style__promo-text-tablet;
 
     &--arrow::after {
-      width: 24px;
-      height: 11px;
       top: 9px;
       right: -46px;
+    }
+
+    &--arrow:hover::after {
+      right: -55px;
     }
   }
 }
