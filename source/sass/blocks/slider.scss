@@ -137,11 +137,26 @@
       width: 8px;
       height: 8px;
       position: relative;
-      border: 13px solid $color-main;
+      border: 12px solid $color-main;
       border-radius: 50%;
-      box-shadow: 0 0 0 1px $border-color-second;
+      box-shadow: 
+        0 0 0 1px $border-color-second,
+        0px 2px 5px 0 $thumb-color;
       background-color: $color-second;
       cursor: pointer;
+
+      &:hover {
+        box-shadow: 
+          0 0 0 1px $border-color-second,
+          0px 3px 5px 0 $thumb-color-hover;
+      }
+
+      &:active {
+        border: 11px solid $color-main;
+        box-shadow: 
+          0 0 0 2px $color-second,
+          0px 4px 6px 0 $thumb-color-active;
+      }
     }
 
     &::-ms-fill-lower {
@@ -167,11 +182,26 @@
       width: 8px;
       height: 8px;
       position: relative;
-      border: 13px solid $color-main;
+      border: 12px solid $color-main;
       border-radius: 50%;
-      box-shadow: 0 0 0 1px $border-color-second;
+      box-shadow: 
+        0 0 0 1px $border-color-second,
+        0px 2px 5px 0 $thumb-color;
       background-color: $color-second;
       cursor: pointer;
+
+      &:hover {
+        box-shadow: 
+          0 0 0 1px $border-color-second,
+          0px 3px 5px 0 $thumb-color-hover;
+      }
+
+      &:active {
+        border: 11px solid $color-main;
+        box-shadow: 
+          0 0 0 2px $color-second,
+          0px 4px 6px 0 $thumb-color-active;
+      }
     }
 
     &::-moz-range-track {
@@ -187,11 +217,26 @@
       width: 8px;
       height: 8px;
       position: relative;
-      border: 13px solid $color-main;
+      border: 12px solid $color-main;
       border-radius: 50%;
-      box-shadow: 0 0 0 1px $border-color-second;
+      box-shadow: 
+        0 0 0 1px $border-color-second,
+        0px 2px 5px 0 $thumb-color;
       background-color: $color-second;
       cursor: pointer;
+
+      &:hover {
+        box-shadow: 
+          0 0 0 1px $border-color-second,
+          0px 3px 6px 0 $thumb-color-hover;
+      }
+
+      &:active {
+        border: 11px solid $color-main;
+        box-shadow: 
+          0 0 0 2px $color-second,
+          0px 4px 5px 0 $thumb-color-active;
+      }
     }
   }
 }
