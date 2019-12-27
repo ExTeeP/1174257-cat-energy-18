@@ -35,7 +35,7 @@
     vertical-align: bottom;
     background-color: $color-main;
 
-    &::before{
+    &::before {
       content: "";
       width: 5000px;
       height: 3px;
@@ -45,7 +45,7 @@
       left: -5039px;
       background-color: $color-second;
     }
-    
+
     &::after {
       content: "";
       width: 5000px;
