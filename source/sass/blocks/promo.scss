@@ -1,6 +1,5 @@
 .promo {
   margin-bottom: 22px;
-  background-color: $color-main;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,13 +17,14 @@
   }
 }
 
-.promo__wrapper {
-  background-color: $color-second;
+@media (max-width: $mobile-width-only) {
+  .promo__wrapper {
+    background-color: $color-second;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .promo__wrapper {
-    background-color: $color-main;
     margin-bottom: 28px;
   }
 }

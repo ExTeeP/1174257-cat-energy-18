@@ -1,3 +1,16 @@
-.page {
-  background-color: $color-main;
+@media (min-width: $desktop-width) {
+  .page--bg-cat::before {
+    content: "";
+    height: 696px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    background-color: $color-second;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
 }

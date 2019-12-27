@@ -22,6 +22,20 @@
     color: $text-color-second--hover;
     background-color: $color-second--hover;
   }
+
+  &--second {
+    color: $text-color-fourth;
+    background-color: $color-third;
+
+    &:hover {
+      background-color: $color-third--hover;
+    }
+
+    &:active {
+      color: $text-color-fourth--hover;
+      background-color: $color-third--hover;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

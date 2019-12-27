@@ -10,7 +10,7 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding-top: 292px;
+    padding-top: 293px;
   }
 }
 
@@ -109,6 +109,16 @@
 @media (min-width: $tablet-width) {
   .slider__btn {
     @include font-style__promo-text-tablet;
+    height: 32px;
+    border-bottom: 1px dotted $btn-slider-dotted;
+
+    &:hover {
+      border-bottom: 1px solid $btn-slider-line;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 

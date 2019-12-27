@@ -12,6 +12,7 @@ $color-main: #ffffff;
 $color-second: #68b738;
 $color-second--hover: #5eaa2f;
 $color-third: #f2f2f2;
+$color-third--hover: #ebebeb;
 $color-fourth: #eaeaea;
 
 $text-color-main: #111111;
@@ -19,14 +20,21 @@ $text-color-second: #ffffff;
 $text-color-second--hover: rgba(255, 255, 255, 0.3);
 $text-color-third: #222222;
 $text-color-fourth: #444444;
+$text-color-fourth--hover: rgba(68, 68, 68, 0.3);
 
 $border-color: #ededed;
+$border-color--active: #444444;
 $border-color-second: #cdcdcd;
+$border-color-second--hover: #bababa;
+$border-color-second--opacity: rgba(205, 205, 205, 0.5);
 $border-color-third: #dcdcdc;
 
 $thumb-color: rgba(0, 0, 0, 0.15);
 $thumb-color-hover: rgba(0, 0, 0, 0.25);
 $thumb-color-active: rgba(0, 0, 0, 0.25);
+
+$btn-slider-dotted: rgba(0, 0, 0, 0.23);
+$btn-slider-line: rgba(0, 0, 0, 0.4);
 
 $font-main: "Oswald", "Arial", sans-serif;
 $font-second: "Arial", "Helvetica", sans-serif;

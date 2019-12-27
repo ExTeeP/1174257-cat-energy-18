@@ -191,11 +191,6 @@
 .product__btn {
   width: 280px;
   margin-bottom: 24px;
-
-  &--add {
-    color: $text-color-fourth;
-    background-color: $color-third;
-  }
 }
 
 @media (min-width: $tablet-width) {

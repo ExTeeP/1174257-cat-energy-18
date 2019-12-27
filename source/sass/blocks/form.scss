@@ -114,7 +114,7 @@
 .form__programm {
   margin: 0;
   padding: 20px;
-  border: 1px solid $border-color-second;
+  border: 1px solid $border-color-second--opacity;
 }
 
 @media (min-width: $tablet-width) {
@@ -318,6 +318,10 @@
   &--radio {
     padding-left: 32px;
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -327,6 +331,14 @@
       left: 0;
       border-radius: 50%;
       border: 1px solid $border-color-second;
+    }
+
+    &:hover::before {
+      border: 1px solid $border-color-second--hover;
+    }
+
+    &:active::before {
+      border: 1px solid $border-color-second--hover;
     }
 
     &::after {
@@ -344,6 +356,10 @@
   &--checkbox {
     padding-left: 32px;
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -352,6 +368,14 @@
       top: 0;
       left: 0;
       border: 1px solid $border-color-second;
+    }
+
+    &:hover::before {
+      border: 1px solid $border-color-second--hover;
+    }
+
+    &:active::before {
+      border: 1px solid $border-color-second--hover;
     }
 
     &::after {
@@ -411,7 +435,7 @@
 }
 
 .form__input {
-  border: 1px solid $border-color-second;
+  border: 1px solid $border-color-second--opacity;
 
   &--text {
     @include font-style__label;
@@ -424,10 +448,26 @@
     text-align: left;
     text-transform: uppercase;
     color: $text-color-fourth;
+
+    &:hover {
+      border: 1px solid $border-color-second;
+    }
+
+    &:focus {
+      border: 2px solid $border-color--active;
+    }
   }
 
   &--number {
     appearance: textfield;
+
+    &:hover {
+      border: 1px solid $border-color-second;
+    }
+
+    &:focus {
+      border: 2px solid $border-color--active;
+    }
   }
 
   &--number::-webkit-inner-spin-button,
@@ -487,7 +527,15 @@
   font-family: $font-main;
   text-transform: uppercase;
   resize: none;
-  border: 1px solid $border-color-second;
+  border: 1px solid $border-color-second--opacity;
+
+  &:hover {
+    border: 1px solid $border-color-second;
+  }
+
+  &:focus {
+    border: 2px solid $border-color--active;
+  }
 }
 
 @media (min-width: $tablet-width) {
