@@ -1,8 +1,16 @@
 @media (min-width: $tablet-width) {
   .slider {
+    padding-top: 361px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    padding-top: 292px;
   }
 }
 
@@ -25,26 +33,37 @@
   margin-bottom: 36px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .slider__img-wrapper {
+    width: 636px;
+    height: 499px;
     margin-bottom: 0;
+    position: absolute;
+    display: none;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .slider__img-wrapper {
+//   }
+// }
 
 .slider__btn-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .slider__btn-wrapper {
-    margin-bottom: 74px;
+    min-height: 34px;
+    margin-bottom: 67px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__btn-wrapper {
-    margin-bottom: 14px;
+    margin-bottom: 0;
     margin-left: 39px;
   }
 }
@@ -60,19 +79,19 @@
   &--margin-left {
     margin-left: 18px;
   }
-
-  &--size {
-    height: 0px;
-  }
 }
 
 @media (min-width: $tablet-width) {
-  .slider__item--margin-right {
-    margin-right: 22px;
-  }
+  .slider__item {
+    height: 34px;
 
-  .slider__item--margin-left {
-    margin-left: 22px;
+    &--margin-right {
+      margin-right: 22px;
+    }
+
+    &--margin-left {
+      margin-left: 22px;
+    }
   }
 }
 
@@ -100,6 +119,7 @@
 @media (min-width: $tablet-width) {
   .slider__range-input {
     width: 428px;
+    padding: 0;
     display: block;
     appearance: none;
     background-color: transparent;
@@ -124,14 +144,14 @@
       cursor: pointer;
     }
 
-    &:focus::-ms-fill-lower {
+    &::-ms-fill-lower {
       border-radius: 2.5px;
-      background: $border-color-third;
+      background-color: $border-color-third;
     }
     
-    &:focus::-ms-fill-upper {
+    &::-ms-fill-upper {
       border-radius: 2.5px;
-      background: $border-color-third;
+      background-color: $border-color-third;
     }
 
     &::-webkit-slider-runnable-track {

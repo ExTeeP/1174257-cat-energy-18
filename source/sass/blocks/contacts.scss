@@ -1,21 +1,7 @@
 .contacts {
   background-color: $color-third;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts {
-    background-color: $color-third;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .contacts--mobile {
+  &--bg {
     background-color: $color-main;
   }
 }
@@ -34,18 +20,16 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    margin-bottom: 60px;
     padding: 0 40px;
     padding-top: 65px;
+    padding-bottom: 60px;
     justify-content: space-between;
-    background-color: $color-third;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 570px;
-    margin: 0;
     padding-top: 64px;
     padding-right: 84px;
     padding-bottom: 58px;

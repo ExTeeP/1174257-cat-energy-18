@@ -85,9 +85,10 @@
 
 @media (min-width: $desktop-width) {
   .example__title {
+    margin-bottom: 0;
     position: absolute;
     top: -136px;
-    left: 40;
+    left: 40px;
   }
 }
 
@@ -260,8 +261,10 @@
   }
 }
 
-.example__slider {
-  background-color: $color-third;
+@media (min-width: $tablet-width) {
+  .example__inner {
+    background-color: $color-third;
+  }
 }
 
 @media (min-width: $tablet-width) {

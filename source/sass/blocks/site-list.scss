@@ -27,36 +27,37 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $border-color;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &--active {
-    cursor: default;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      opacity: 1;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    height: 59px;
+    height: 43px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border: none;
     margin-left: 35px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &--active {
+      border-bottom: 2px solid $color-second;
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
 
     &:first-child {
       margin-left: 0;
@@ -66,7 +67,11 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    height: 60px;
+    height: 45px;
+
+    &--active-index {
+      border-bottom: 2px solid $color-main;
+    }
   }
 }
 
