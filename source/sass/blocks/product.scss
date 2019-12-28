@@ -100,10 +100,17 @@
 .product__wrapper-desc {
   width: 140px;
   margin-left: 140px;
-  margin-bottom: auto;
+  margin-bottom: 22px;
   padding-top: 22px;
   display: flex;
   flex-direction: column;
+
+  &--add {
+    width: 280px;
+    margin-bottom: 11px;
+    margin-left: 0;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -111,6 +118,11 @@
     width: auto;
     margin-left: 0;
     padding-top: 0;
+
+    &--add {
+      width: auto;
+      margin-bottom: 76px;
+    }
   }
 }
 
@@ -124,7 +136,7 @@
 
   &--add {
     margin-bottom: 7px;
-    align-self: center;
+    text-align: center;
   }
 }
 
@@ -157,7 +169,7 @@
 .product__text {
   @include font-size__21;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   font-family: $font-second;
   text-align: left;
   color: $text-color-fourth;
@@ -167,8 +179,14 @@
 @media (min-width: $tablet-width) {
   .product__text {
     @include font-size__16;
+    padding: 0 20px;
     text-align: center;
-    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__text {
+    padding: 0;
   }
 }
 
@@ -207,6 +225,7 @@
 
 .product__desc-cell {
   padding: 0;
+  display: flex; //для IE
 
   &--name {
     text-align: left;
