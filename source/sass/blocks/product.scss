@@ -72,6 +72,7 @@
     width: 245px;
     min-height: 431px;
     margin-top: 81px;
+    padding-top: 163px;
     border: none;
     background-color: $color-third;
 
@@ -80,13 +81,13 @@
       background-color: $color-main;
 
     &::before {
-      top: 84px;
-      left: 93px;
+      top: 82px;
+      left: 92px;
     }
 
     &::after {
-      top: 55px;
-      left: 122px;
+      top: 53px;
+      left: 121px;
     }
     }
   }
@@ -99,7 +100,7 @@
 .product__wrapper-desc {
   width: 140px;
   margin-left: 140px;
-  margin-bottom: 22px;
+  margin-bottom: auto;
   padding-top: 22px;
   display: flex;
   flex-direction: column;
@@ -166,7 +167,6 @@
 @media (min-width: $tablet-width) {
   .product__text {
     @include font-size__16;
-    padding: 0 20px;
     text-align: center;
     margin-bottom: auto;
   }
