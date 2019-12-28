@@ -11,6 +11,28 @@
 
   &--add {
     padding-top: 80px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 144px;
+      background-color: $product-add-element;
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 30px;
+      display: block;
+      position: absolute;
+      top: 26px;
+      left: 158px;
+      background-color: $product-add-element;
+    }
   }
 }
 
@@ -27,6 +49,20 @@
     &--add {
       border: 1px solid $border-color;
       background-color: $color-main;
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        top: 82px;
+        left: 132px;
+      }
+  
+      &::after {
+        width: 2px;
+        height: 60px;
+        top: 53px;
+        left: 161px;
+      }
     }
   }
 }
@@ -38,6 +74,21 @@
     margin-top: 81px;
     border: none;
     background-color: $color-third;
+
+    &--add {
+      border: 1px solid $border-color;
+      background-color: $color-main;
+
+    &::before {
+      top: 84px;
+      left: 93px;
+    }
+
+    &::after {
+      top: 55px;
+      left: 122px;
+    }
+    }
   }
 }
 

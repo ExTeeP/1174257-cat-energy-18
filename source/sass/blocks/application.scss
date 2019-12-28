@@ -80,7 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .application__form {
-    width: auto;
+    width: $tablet-width;
     padding: $form-padding;
   }
 }
