@@ -96,7 +96,7 @@
 }
 
 .slider__btn {
-  @include font-style__12;
+  @include font-size__15;
   padding: 0;
   border: none;
   font-family: $font-main;
@@ -108,7 +108,7 @@
 
 @media (min-width: $tablet-width) {
   .slider__btn {
-    @include font-style__promo-text-tablet;
+    @include font-size__12;
     height: 32px;
     border-bottom: 1px dotted $btn-slider-dotted;
 
@@ -154,12 +154,12 @@
       cursor: pointer;
 
       &:hover {
-        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color-hover;
+        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color--hover;
       }
 
       &:active {
         border: 11px solid $color-main;
-        box-shadow: 0 0 0 2px $color-second, 0px 6px 6px 0 $thumb-color-active;
+        box-shadow: 0 0 0 2px $color-second, 0px 6px 6px 0 $thumb-color--active;
       }
     }
 
@@ -193,12 +193,12 @@
       cursor: pointer;
 
       &:hover {
-        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color-hover;
+        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color--hover;
       }
 
       &:active {
         border: 11px solid $color-main;
-        box-shadow: 0 0 0 2px $color-second, 0px 6px 5px 0 $thumb-color-active;
+        box-shadow: 0 0 0 2px $color-second, 0px 6px 5px 0 $thumb-color--active;
       }
     }
 
@@ -222,12 +222,12 @@
       cursor: pointer;
 
       &:hover {
-        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color-hover;
+        box-shadow: 0 0 0 1px $border-color-second, 0px 4px 5px 0 $thumb-color--hover;
       }
 
       &:active {
         border: 11px solid $color-main;
-        box-shadow: 0 0 0 2px $color-second, 0px 6px 5px 0 $thumb-color-active;
+        box-shadow: 0 0 0 2px $color-second, 0px 6px 5px 0 $thumb-color--active;
       }
     }
   }

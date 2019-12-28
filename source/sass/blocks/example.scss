@@ -69,7 +69,7 @@
 }
 
 .example__title {
-  @include font-style__title;
+  @include font-size__3;
   margin: 0;
   margin-bottom: 24px;
   text-align: left;
@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .example__title {
-    @include font-style__promo-title;
+    @include font-size__2;
     margin-bottom: 65px;
   }
 }
@@ -93,7 +93,7 @@
 }
 
 .example__text {
-  @include font-style__5;
+  @include font-size__19;
   margin: 0;
   margin-bottom: 25px;
   font-family: $font-second;
@@ -103,7 +103,7 @@
 
 @media (min-width: $tablet-width) {
   .example__text {
-    @include font-style__22;
+    @include font-size__14;
     width: 678px;
     margin-bottom: 53px;
   }
@@ -163,7 +163,7 @@
 }
 
 .example__value {
-  @include font-style__9;
+  @include font-size__8;
   margin: 0;
   padding: 0;
   font-family: $font-main;
@@ -174,12 +174,12 @@
 
 @media (min-width: $tablet-width) {
   .example__value {
-    @include font-style__25;
+    @include font-size__6;
   }
 }
 
 .example__desc-small {
-  @include font-style__10;
+  @include font-size__22;
   position: absolute;
   display: block;
   width: 85px;
@@ -195,7 +195,7 @@
 
 @media (min-width: $tablet-width) {
   .example__desc-small {
-    @include font-style__17;
+    @include font-size__20;
     width: auto;
     padding: 0 8px;
     top: 62px;
@@ -244,12 +244,12 @@
 }
 
 .example__count-text {
-  @include font-style__11;
+  @include font-size__18;
 }
 
 @media (min-width: $tablet-width) {
   .example__count-text {
-    @include font-style__promo-text-tablet;
+    @include font-size__12;
     margin-bottom: 10px;
   }
 }

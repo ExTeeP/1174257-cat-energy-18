@@ -35,7 +35,7 @@
 }
 
 .catalog__title {
-  @include font-style__title;
+  @include font-size__3;
   margin: 0;
   margin-left: 20px;
   margin-bottom: 29px;
@@ -45,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    @include font-style__promo-title;
+    @include font-size__2;
     margin-left: 0;
     margin-bottom: 85px;
   }

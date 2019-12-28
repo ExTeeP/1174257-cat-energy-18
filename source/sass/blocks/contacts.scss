@@ -44,7 +44,7 @@
 }
 
 .contacts__strong {
-  @include font-style__12;
+  @include font-size__15;
   display: block;
   width: 140px;
   margin: 0;
@@ -56,13 +56,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts__strong {
-    @include font-style__menu-desktop;
+    @include font-size__10;
     width: 160px;
   }
 }
 
 .contacts__text {
-  @include font-style__11;
+  @include font-size__18;
   width: 140px;
   margin: 0;
   padding: 0;
@@ -72,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__text {
-    @include font-style__12;
+    @include font-size__15;
     width: 160px;
     text-align: right;
   }

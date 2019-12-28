@@ -17,7 +17,7 @@
 }
 
 .related__title {
-  @include font-style__9;
+  @include font-size__8;
   margin: 0;
   margin-bottom: 35px;
   position: relative;
@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .related__title {
-    @include font-style__2;
+    @include font-size__5;
     margin-bottom: 82px;
     margin-left: 37px;
     position: relative;

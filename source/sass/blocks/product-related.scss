@@ -42,7 +42,7 @@
 }
 
 .product-related__title {
-  @include font-style__12;
+  @include font-size__15;
   margin: 0;
   margin-bottom: 10px;
   text-align: left;
@@ -52,7 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .product-related__title {
-    @include font-style__menu;
+    @include font-size__11;
     margin-bottom: 25px;
   }
 }
@@ -65,7 +65,7 @@
 }
 
 .product-related__desc {
-  @include font-style__17;
+  @include font-size__20;
   margin-bottom: 15px;
   display: flex;
   font-family: $font-second;
@@ -75,7 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .product-related__desc {
-    @include font-style__12;
+    @include font-size__15;
   }
 }
 

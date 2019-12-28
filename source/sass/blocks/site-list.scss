@@ -1,10 +1,10 @@
 .site-list {
-  @include font-style__menu;
+  @include font-size__11;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    @include font-style__menu-tablet;
+    @include font-size__13;
     min-width: 440px;
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    @include font-style__menu-desktop;
+    @include font-size__10;
     min-width: 480px;
   }
 }

@@ -181,7 +181,7 @@
 }
 
 .program-card__title {
-  @include font-style__4;
+  @include font-size__7;
   margin: 0;
   text-transform: uppercase;
   color: $text-color-main;
@@ -189,12 +189,12 @@
 
 @media (min-width: $tablet-width) {
   .program-card__title {
-    @include font-style__42;
+    @include font-size__4;
   }
 }
 
 .program-card__text {
-  @include font-style__5;
+  @include font-size__19;
   margin: 0;
   font-family: $font-second;
   color: $text-color-fourth;
@@ -203,12 +203,12 @@
 
 @media (min-width: $tablet-width) {
   .program-card__text {
-    @include font-style__22;
+    @include font-size__14;
   }
 }
 
 .program-card__btn {
-  @include font-style__15;
+  @include font-size__17;
   margin-bottom: 10px;
   position: relative;
   text-transform: uppercase;
@@ -240,7 +240,7 @@
 
 @media (min-width: $tablet-width) {
   .program-card__btn {
-    @include font-style__promo-text-tablet;
+    @include font-size__12;
     margin-right: auto;
 
     &--arrow::after {
