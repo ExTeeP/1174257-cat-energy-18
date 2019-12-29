@@ -1,6 +1,5 @@
 .copyright {
   min-height: 78px;
-  padding-top: 22px;  //для IE
   display: flex;
   justify-content: space-between;
   align-items: flex-start;  //для IE
@@ -9,7 +8,6 @@
 @media (min-width: $tablet-width) {
   .copyright {
     min-height: auto;
-    padding-top: 0;
     align-items: center;  //для IE
   }
 }

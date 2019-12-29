@@ -16,14 +16,7 @@
   }
 
   &::before {
-    content: "";
-    width: 5000px;
-    height: 3px;
-    display: block;
-    position: absolute;
-    top: 23px;
-    left: -5039px;
-    background-color: $color-second;
+    content: none;
   }
 
   &::after {
@@ -32,8 +25,8 @@
     height: 3px;
     display: block;
     position: absolute;
-    top: 23px;
-    right: -5042px;
+    top: 14px;
+    right: -5022px;
     background-color: $color-second;
   }
 }
@@ -45,6 +38,22 @@
 
     &--position {
       margin-bottom: 58px;
+    }
+    
+    &::before {
+      content: "";
+      width: 5000px;
+      height: 3px;
+      display: block;
+      position: absolute;
+      top: 23px;
+      left: -5039px;
+      background-color: $color-second;
+    }
+
+    &::after {
+      top: 23px;
+      right: -5042px;
     }
   }
 }
@@ -140,13 +149,13 @@
 @media (min-width: $tablet-width) {
   .form__feedback {
     padding: 0;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__feedback {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 }
 
@@ -160,13 +169,13 @@
 @media (min-width: $tablet-width) {
   .form__comment {
     padding: 0;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__comment {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 }
 
@@ -180,7 +189,7 @@
 @media (min-width: $tablet-width) {
   .form__additional {
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 }
 
@@ -593,6 +602,5 @@
 @media (min-width: $desktop-width) {
   .form__note {
     margin-left: 0;
-    padding-top: 20px;
   }
 }
