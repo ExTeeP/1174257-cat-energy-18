@@ -6,14 +6,14 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     padding-top: 47px;
   }
 }
@@ -35,17 +35,17 @@
 }
 
 .catalog__title {
-  @include font-style__title;
+  @include font-size__3;
   margin: 0;
   margin-left: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   text-align: left;
   color: $text-color-main;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    @include font-style__promo-title;
+    @include font-size__2;
     margin-left: 0;
     margin-bottom: 85px;
   }
@@ -76,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .catalog__item {
     margin-right: 80px;
-    margin-bottom: 61px;
+    margin-bottom: 62px;
 
     &:nth-child(2n) {
       margin-right: 80px;

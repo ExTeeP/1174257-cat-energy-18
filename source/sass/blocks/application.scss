@@ -2,6 +2,7 @@
   margin-bottom: 31px;
   padding-top: 14px;
   background-color: $color-main;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +15,7 @@
 @media (min-width: $desktop-width) {
   .application {
     padding-top: 47px;
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 }
 
@@ -26,10 +27,6 @@
   .application__wrapper {
     margin-bottom: 66px;
   }
-}
-
-.application__wrapper {
-  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +36,7 @@
 }
 
 .application__title {
-  @include font-style__title;
+  @include font-size__3;
   margin: 0;
   margin-bottom: 25px;
   text-align: left;
@@ -48,13 +45,13 @@
 
 @media (min-width: $tablet-width) {
   .application__title {
-    @include font-style__promo-title;
+    @include font-size__2;
     margin-bottom: 56px;
   }
 }
 
 .application__text {
-  @include font-style__5;
+  @include font-size__19;
   width: 270px;
   margin: 0;
   text-align: left;
@@ -64,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .application__text {
-    @include font-style__32;
+    @include font-size__9;
     width: 350px;
     margin-left: 40px;
   }
@@ -83,7 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .application__form {
-    width: auto;
+    width: $tablet-width;
     padding: $form-padding;
   }
 }

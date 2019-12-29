@@ -1,21 +1,7 @@
 .contacts {
   background-color: $color-third;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts {
-    background-color: $color-third;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .contacts--mobile {
+  &--bg {
     background-color: $color-main;
   }
 }
@@ -34,18 +20,16 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    margin-bottom: 60px;
     padding: 0 40px;
     padding-top: 65px;
+    padding-bottom: 57px;
     justify-content: space-between;
-    background-color: $color-third;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 570px;
-    margin: 0;
     padding-top: 64px;
     padding-right: 84px;
     padding-bottom: 58px;
@@ -60,7 +44,7 @@
 }
 
 .contacts__strong {
-  @include font-style__12;
+  @include font-size__15;
   display: block;
   width: 140px;
   margin: 0;
@@ -72,13 +56,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts__strong {
-    @include font-style__menu-desktop;
+    @include font-size__10;
     width: 160px;
   }
 }
 
 .contacts__text {
-  @include font-style__11;
+  @include font-size__18;
   width: 140px;
   margin: 0;
   padding: 0;
@@ -88,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__text {
-    @include font-style__12;
+    @include font-size__15;
     width: 160px;
     text-align: right;
   }

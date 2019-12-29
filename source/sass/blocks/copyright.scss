@@ -1,6 +1,5 @@
 .copyright {
   min-height: 78px;
-  padding-top: 22px;  //для IE
   display: flex;
   justify-content: space-between;
   align-items: flex-start;  //для IE
@@ -9,13 +8,12 @@
 @media (min-width: $tablet-width) {
   .copyright {
     min-height: auto;
-    padding-top: 0;  //для IE
     align-items: center;  //для IE
   }
 }
 
 .copyright__text {
-  @include font-style__15;
+  @include font-size__17;
   margin: 0;
   margin-right: auto; //для IE
   padding-top: 7px;  //для IE
@@ -26,7 +24,7 @@
 @media (min-width: $tablet-width) {
   .copyright__text {
     padding-top: 0; //для IE
-    margin-right: 20px;
+    margin-right: 22px;
   }
 }
 
@@ -36,10 +34,15 @@
   height: 34px;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding-top: 3px;
+  }
+}
+
 .copyright__img {
   width: 27px;
   height: 34px;
-  transform: scale(1.5, 1.5);
 }
 
 .copyright__img:hover path {

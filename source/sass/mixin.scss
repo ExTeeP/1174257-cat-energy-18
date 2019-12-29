@@ -4,153 +4,133 @@
   list-style: none;
 }
 
-@mixin font-style__XXX {
+@mixin font-size__1 {
   font-size: 281px;
   font-weight: 400;
   line-height: 281px;
 }
 
-@mixin font-style__promo-title {
+@mixin font-size__2 {
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
 }
 
-@mixin font-style__title {
-  // заголовоки
+@mixin font-size__3 {
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
 }
 
-@mixin font-style__42 {
-  // заголовок промо блока
+@mixin font-size__4 {
   font-size: 36px;
   font-weight: 400;
   line-height: 37px;
 }
 
-@mixin font-style__2 {
-  // заголовок промо блока
+@mixin font-size__5 {
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
 }
 
-@mixin font-style__25 {
-  // заголовок промо блока
+@mixin font-size__6 {
   font-size: 30px;
   font-weight: 400;
   line-height: 37px;
 }
 
-@mixin font-style__4 {
-  // заголовок в карточке программы
+@mixin font-size__7 {
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
 }
 
-@mixin font-style__9 {
-  // цифры в рамке в примере с котом, заголовок блока доп товаров
+@mixin font-size__8 {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 }
 
-@mixin font-style__32 {
-  // текст формы
+@mixin font-size__9 {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
 
-@mixin font-style__menu-desktop {
-  // итемы меню планшет
+@mixin font-size__10 {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
 }
 
-@mixin font-style__menu {
-  // кнопки меню
+@mixin font-size__11 {
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 }
 
-@mixin font-style__promo-text-tablet {
-  // промо текст
+@mixin font-size__12 {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
 }
 
-@mixin font-style__menu-tablet {
-  // итемы меню планшет
+@mixin font-size__13 {
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
 }
 
-@mixin font-style__22 {
-  // стронг текст в контактах, текст в блоке с подарком, заголовок доп. товаров, заголовок товара
+@mixin font-size__14 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-@mixin font-style__12 {
-  // стронг текст в контактах, текст в блоке с подарком, заголовок доп. товаров, заголовок товара
+@mixin font-size__15 {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
 
-@mixin font-style__label {
-  // лейблы
+@mixin font-size__16 {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
 }
 
-@mixin font-style__15 {
-  // копиратй текст, кнопка в карточке программы
+@mixin font-size__17 {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
 }
 
-@mixin font-style__11 {
-  // Затраты на питание, адрес в контактах
+@mixin font-size__18 {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
-@mixin font-style__5 {
-  // Описание карточки
+@mixin font-size__19 {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
 }
 
-@mixin font-style__17 {
-  // описание в карточке доп товаратовара
+@mixin font-size__20 {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
 }
 
-@mixin font-style__16 {
-  // описание в карточке товара
+@mixin font-size__21 {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
-@mixin font-style__10 {
-  // подпись под цифрами в примере с котом
+@mixin font-size__22 {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;

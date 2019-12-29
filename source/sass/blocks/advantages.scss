@@ -17,7 +17,7 @@
 }
 
 .advantages__title {
-  @include font-style__title;
+  @include font-size__3;
   margin: 0;
   margin-bottom: 30px;
   color: $text-color-main;
@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__title {
-    @include font-style__promo-title;
+    @include font-size__2;
     margin-bottom: 72px;
   }
 }
@@ -41,7 +41,6 @@
     min-height: 577px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-content: space-between;
   }
 }
@@ -98,7 +97,7 @@
   .advantages__item {
     width: 324px;
     min-height: 240px;
-    margin-right: 30px;
+    margin-right: 60px;
     margin-bottom: 20px;
 
     &:nth-child(2n) {
@@ -132,11 +131,11 @@
   .advantages__item {
     width: 245px;
     min-height: 240px;
-    margin-right: 25px;
+    margin-right: 80px;
     margin-bottom: 20px;
 
     &:nth-child(2n) {
-      margin-right: 25px;
+      margin-right: 80px;
     }
 
     &:nth-child(4n) {
@@ -146,7 +145,7 @@
 }
 
 .advantages__text {
-  @include font-style__5;
+  @include font-size__19;
   margin: 0;
   margin-left: 80px;
   padding-top: 2px;
@@ -157,7 +156,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__text {
-    @include font-style__22;
+    @include font-size__14;
     margin-top: 110px;
     margin-right: 70px;
     margin-left: 0;
@@ -166,7 +165,7 @@
     z-index: 2;
 
     &--number-1::after {
-      @include font-style__XXX;
+      @include font-size__1;
       content: "1";
       display: block;
       position: absolute;
@@ -178,7 +177,7 @@
     }
 
     &--number-2::after {
-      @include font-style__XXX;
+      @include font-size__1;
       content: "2";
       display: block;
       position: absolute;
@@ -190,7 +189,7 @@
     }
 
     &--number-3::after {
-      @include font-style__XXX;
+      @include font-size__1;
       content: "3";
       display: block;
       position: absolute;
@@ -202,7 +201,7 @@
     }
 
     &--number-4::after {
-      @include font-style__XXX;
+      @include font-size__1;
       content: "4";
       display: block;
       position: absolute;

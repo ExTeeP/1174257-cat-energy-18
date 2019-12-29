@@ -11,6 +11,28 @@
 
   &--add {
     padding-top: 80px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 144px;
+      background-color: $product-add-element;
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 30px;
+      display: block;
+      position: absolute;
+      top: 26px;
+      left: 158px;
+      background-color: $product-add-element;
+    }
   }
 }
 
@@ -27,6 +49,20 @@
     &--add {
       border: 1px solid $border-color;
       background-color: $color-main;
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        top: 82px;
+        left: 132px;
+      }
+  
+      &::after {
+        width: 2px;
+        height: 60px;
+        top: 53px;
+        left: 161px;
+      }
     }
   }
 }
@@ -36,8 +72,24 @@
     width: 245px;
     min-height: 431px;
     margin-top: 81px;
+    padding-top: 163px;
     border: none;
     background-color: $color-third;
+
+    &--add {
+      border: 1px solid $border-color;
+      background-color: $color-main;
+
+    &::before {
+      top: 82px;
+      left: 92px;
+    }
+
+    &::after {
+      top: 53px;
+      left: 121px;
+    }
+    }
   }
 }
 
@@ -52,6 +104,13 @@
   padding-top: 22px;
   display: flex;
   flex-direction: column;
+
+  &--add {
+    width: 280px;
+    margin-bottom: 11px;
+    margin-left: 0;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,11 +118,16 @@
     width: auto;
     margin-left: 0;
     padding-top: 0;
+
+    &--add {
+      width: auto;
+      margin-bottom: 76px;
+    }
   }
 }
 
 .product__title {
-  @include font-style__12;
+  @include font-size__15;
   margin: 0;
   margin-bottom: 12px;
   text-align: left;
@@ -72,13 +136,13 @@
 
   &--add {
     margin-bottom: 7px;
-    align-self: center;
+    text-align: center;
   }
 }
 
 @media (min-width: $tablet-width) {
   .product__title {
-    @include font-style__menu;
+    @include font-size__11;
     padding: 0 45px;
     margin-bottom: 26px;
     text-align: center;
@@ -103,9 +167,9 @@
 }
 
 .product__text {
-  @include font-style__16;
+  @include font-size__21;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   font-family: $font-second;
   text-align: left;
   color: $text-color-fourth;
@@ -114,15 +178,21 @@
 
 @media (min-width: $tablet-width) {
   .product__text {
-    @include font-style__label;
+    @include font-size__16;
+    width: 100%;
     padding: 0 20px;
     text-align: center;
-    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__text {
+    padding: 0;
   }
 }
 
 .product__desc {
-  @include font-style__16;
+  @include font-size__21;
   display: flex;
   font-family: $font-second;
   text-align: left;
@@ -131,7 +201,7 @@
 
 @media (min-width: $tablet-width) {
   .product__desc {
-    @include font-style__15;
+    @include font-size__17;
     margin-bottom: 4px;
   }
 }
@@ -156,6 +226,7 @@
 
 .product__desc-cell {
   padding: 0;
+  display: flex; //для IE
 
   &--name {
     text-align: left;
@@ -191,11 +262,6 @@
 .product__btn {
   width: 280px;
   margin-bottom: 24px;
-
-  &--add {
-    color: $text-color-fourth;
-    background-color: $color-third;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -210,4 +276,4 @@
   .product__btn {
     width: 169px;
   }
-} 
+}
