@@ -17,15 +17,25 @@
     margin-top: 158px;
     padding: 0;
     background-color: $color-third;
+    position: relative;
+
+    &--bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 1200px;
+      background-color: $color-fourth;
+      z-index: 1;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .example__container {
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
+.example__container {
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $desktop-width) {
@@ -33,15 +43,28 @@
     width: $desktop-width;
     margin: 0 auto;
     padding: $desktop-padding;
-    padding-top: 70px;
     padding-bottom: 60px;
     position: relative;
     display: flex;
+
+    &--bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 975px;
+      background-color: $color-fourth;
+      z-index: 1;
+    }
   }
 }
 
 .example__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
   margin-bottom: 20px;
+  padding: $mobile-padding;
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    width: 610px;
+    width: 440px;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -112,6 +135,7 @@
 @media (min-width: $desktop-width) {
   .example__text {
     width: 438px;
+    margin-top: 70px;
     margin-bottom: 70px;
   }
 }
@@ -269,14 +293,49 @@
 
 @media (min-width: $desktop-width) {
   .example__count-text {
-    margin-right: 65px;
+    margin-right: 64px;
     margin-bottom: 0;
   }
 }
 
+.example__inner {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .example__inner {
+    width: auto;
+    margin: 0;
+    position: relative;
     background-color: $color-third;
+    z-index: 1;
+
+    &--bg::before {
+      content: "";
+      display: block;
+      height: 462px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      background-color: $color-fourth;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__inner {
+    margin-left: 90px;
+    background-color: transparent;
+    z-index: 1;
+
+    &--bg::before {
+      display: none;
+      z-index: 0;
+    }
   }
 }
 
@@ -290,7 +349,7 @@
 
 @media (min-width: $desktop-width) {
   .example__slider {
-    width: 610px;
+    width: 690px;
     margin: 0;
     padding: 0;
   }

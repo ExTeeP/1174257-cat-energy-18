@@ -85,6 +85,20 @@
   height: 39px;
 }
 
+@media (min-width: $tablet-width) {
+  .header__logo-img {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-img {
+    width: 203px;
+    height: 60px;
+  }
+}
+
 .header__toggle {
   position: absolute;
   z-index: 2;

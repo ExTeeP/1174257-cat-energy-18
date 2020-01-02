@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: $color-second;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +20,12 @@
     padding-top: 70px;
     padding-right: 105px;
     padding-left: 420px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 }
 
@@ -25,6 +35,12 @@
     height: 289px;
     padding: 0 30px;
     padding-top: 185px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 }
 
@@ -35,11 +51,11 @@
   text-align: center;
   color: $text-color-second;
 
-  &::before {
+  &--icon::before {
     content: "";
     display: block;
     position: absolute;
-    width: 56px;
+    width: 55px;
     height: 61px;
     top: 65px;
     left: 113px;
@@ -52,6 +68,10 @@
 @media (min-width: $tablet-width) {
   .gift__text {
     text-align: left;
+
+    &--icon::before {
+      left: 91px;
+    }
   }
 }
 
@@ -59,7 +79,7 @@
   .gift__text {
     text-align: center;
 
-    &::before {
+    &--icon::before {
       left: 96px;
     }
   }

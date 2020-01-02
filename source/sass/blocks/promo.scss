@@ -83,7 +83,7 @@
     width: 500px;  //для IE
     margin-right: auto;  //для IE
     margin-bottom: 42px;
-    margin-left: 90px;
+    margin-left: 87px;
     text-align: left;
     color: $text-color-main;
   }
@@ -114,7 +114,7 @@
     width: auto;
     margin-right: 300px;
     margin-bottom: 20px;
-    margin-left: 90px;
+    margin-left: 88px;
     text-align: left;
     color: $text-color-main;
   }
@@ -141,12 +141,12 @@
 
 @media (min-width: $tablet-width) {
   .promo__img {
-    width: 552px;
-    height: 499px;
+    width: 709px;
+    height: 609px;
     position: absolute;
     margin-left: 0;
-    bottom: -606px;
-    left: 100px;
+    bottom: -609px;
+    left: 29px;
   }
 }
 
@@ -154,16 +154,16 @@
   .promo__img {
     width: 552px;
     height: 499px;
-    position: absolute;
-    margin-left: 0;
-    top: -80px;
-    left: 510px;
+    top: -78px;
+    left: 490px;
   }
 }
 
 .promo__btn {
   width: 280px;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 
   &:last-child {
     margin-bottom: 0;
