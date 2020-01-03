@@ -490,14 +490,6 @@
   }
 }
 
-.form__input-text:focus + .form__icon--mail .form__icon-fill {
-  fill: $color-second;
-}
-
-.form__input-text:focus + .form__icon--phone .form__icon-fill {
-  fill: $color-second;
-}
-
 .form__input-number {
   @include font-size__16;
   min-width: 140px;
@@ -685,4 +677,12 @@
   .form__icon--phone {
     right: 19px;
   }
+}
+
+.form__input-text:focus + .form__icon--mail .form__icon-fill {
+  fill: $color-second;
+}
+
+.form__input-text:focus + .form__icon--phone .form__icon-fill {
+  fill: $color-second;
 }
