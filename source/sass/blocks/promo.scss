@@ -19,7 +19,7 @@
 
 @media (max-width: $mobile-width-only) {
   .promo__wrapper {
-    background-color: $color-second;
+    background-color: $color-second-v2;
   }
 }
 
@@ -44,6 +44,11 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {

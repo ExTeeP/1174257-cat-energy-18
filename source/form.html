@@ -84,15 +84,15 @@
           </div>
 
           <fieldset class="form__feedback">
-              <legend class="form__title">Контактные данные (владельца&nbsp;кота)</legend>
+              <legend class="form__title">Контактные данные <br class="form__break">(владельца кота)</legend>
               <ul class="form__list form__list--feedback">
                 <li class="form__item form__item--feedback">
                   <label class="form__label form__label--text" for="textfield-4">E-mail:<sup>*</sup></label>
-                  <input class="form__input form__input--text" type="email" name="client-email" id="textfield-4" placeholder="kuklachev@gmail.com" required>
+                  <input class="form__input form__input--text form__input--mail" type="email" name="client-email" id="textfield-4" placeholder="kuklachev@gmail.com" required>
                 </li>
                 <li class="form__item form__item--feedback">
                   <label class="form__label form__label--text" for="textfield-5">Телефон:<sup>*</sup></label>
-                  <input class="form__input form__input--text" type="tel" name="client-tel" id="textfield-5" placeholder="8 (960) 900-60-90" required>
+                  <input class="form__input form__input--text form__input--phone" type="tel" name="client-tel" id="textfield-5" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
           </fieldset>
@@ -158,7 +158,9 @@
       <div class="container footer__wrapper">
         <div class="footer__logo">
           <a href="#top" class="footer__logo-link">
-            <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип фитнес-магазина для котиков.">
+            <picture>
+              <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип фитнес-магазина для котиков.">
+            </picture>
           </a>
         </div>
 

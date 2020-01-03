@@ -58,6 +58,13 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .form__break {
+    display: none;
+  }
+}
+
 .form__wrapper {
   margin-bottom: 30px;
 }
@@ -444,6 +451,7 @@
 }
 
 .form__input {
+  position: relative;
   border: 1px solid $border-color-second--opacity;
 
   &--text {
@@ -491,6 +499,20 @@
 
   &--checkbox {
     opacity: 0;
+  }
+
+  &--mail {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-image: url("../../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 18px 14px;
   }
 }
 

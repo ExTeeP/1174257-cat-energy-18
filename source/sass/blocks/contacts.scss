@@ -109,14 +109,16 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper-map {
-    width: auto;
+    width: $desktop-width;
   }
 }
 
 .contacts__iframe-map {
   width: 100%;
   height: 362px;
+  position: relative;
   border: none;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,7 +133,6 @@
   clip: rect(38px, auto, auto, auto);
   position: absolute;
   top: 0;
-  z-index: 1;
 
   // &--marker::before {
   //   content: "";
