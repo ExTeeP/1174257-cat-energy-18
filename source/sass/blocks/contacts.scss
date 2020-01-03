@@ -133,6 +133,7 @@
   clip: rect(38px, auto, auto, auto);
   position: absolute;
   top: 0;
+  left: 0;
 
   // &--marker::before {
   //   content: "";
@@ -153,8 +154,3 @@
     clip: rect(auto, auto, auto, auto);
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .contacts__img {
-//   }
-// }
