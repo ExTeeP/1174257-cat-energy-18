@@ -93,23 +93,50 @@
 }
 
 .contacts__wrapper-map {
-  width: $mobile-width;
   height: 362px;
-  margin: 0 auto;
   position: relative;
   background-color: $color-third;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 53px;
+    margin-left: -30px;
+    display: block;
+    position: absolute;
+    top: 139px;
+    left: 50%;
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 60px 53px;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper-map {
-    width: $tablet-width;
-    height: 400px;
+    height: 396px;
+
+    &::before {
+      width: 122px;
+      height: 106px;
+      margin-left: -61px;
+      top: 146px;
+      left: 50%;
+      background-size: 122px 106px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper-map {
-    width: $desktop-width;
+    height: 400px;
+
+    &::before {
+      margin-left: 279px;
+      top: 150px;
+    }
   }
 }
 
@@ -123,34 +150,42 @@
 
 @media (min-width: $tablet-width) {
   .contacts__iframe-map {
+    height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__iframe-map {
     height: 400px;
   }
 }
 
 .contacts__img {
-  width: 100%;
+  width: 320px;
+  max-width: none;
+  height: 400px;
   margin-top: -38px;
-  clip: rect(38px, auto, auto, auto);
+  margin-left: -160px;
   position: absolute;
   top: 0;
-  left: 0;
-
-  // &--marker::before {
-  //   content: "";
-  //   width: 55px;
-  //   height: 53px;
-  //   position: absolute;
-  //   top: 100px;
-  //   left: 50px;
-  //   background-image: url("../../img/map-pin.png");
-  //   background-repeat: no-repeat;
-  //   z-index: 1;
-  // }
+  left: 50%;
+  clip: rect(38px, auto, auto, auto);
 }
 
 @media (min-width: $tablet-width) {
   .contacts__img {
+    width: 768px;
+    margin-top: -4px;
+    margin-left: -384px;
+    clip: rect(4px, auto, auto, auto);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__img {
+    width: 1440px;
     margin-top: 0;
+    margin-left: -720px;
     clip: rect(auto, auto, auto, auto);
   }
 }
