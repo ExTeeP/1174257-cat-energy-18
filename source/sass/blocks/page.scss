@@ -12,5 +12,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: -1;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: auto 696px;
+    }
   }
 }
