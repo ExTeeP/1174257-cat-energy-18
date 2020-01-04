@@ -21,11 +21,12 @@
 
     &--bg::before {
       content: "";
+      margin-left: 500px;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      left: 1200px;
+      left: 50%;
       background-color: $color-fourth;
       z-index: 1;
     }
@@ -333,7 +334,7 @@
     z-index: 1;
 
     &--bg::before {
-      display: none;
+      content: none;
       z-index: 0;
     }
   }
