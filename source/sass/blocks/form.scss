@@ -637,13 +637,26 @@
   }
 }
 
-
-.form__icon--mail {
-  width: 17px;
-  height: 13px;
+.form__icon {
   position: absolute;
-  top: 16px;
-  right: 16px;
+
+  &--mail {
+    width: 17px;
+    height: 13px;
+    top: 16px;
+    right: 16px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    right: 13px;
+  }
+}
+
+.form__input-text:focus + .form__icon {
+  color: $color-second;
 }
 
 @media (min-width: $tablet-width) {
@@ -658,20 +671,11 @@
   }
 }
 
-.form__icon--phone {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 13px;
-  right: 13px;
-}
-
 @media (min-width: $tablet-width) {
   .form__icon--phone {
     top: 17px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .form__icon--phone {
@@ -679,10 +683,3 @@
   }
 }
 
-.form__input-text:focus + .form__icon--mail .form__icon-fill {
-  fill: $color-second;
-}
-
-.form__input-text:focus + .form__icon--phone .form__icon-fill {
-  fill: $color-second;
-}

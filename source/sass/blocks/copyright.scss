@@ -29,27 +29,14 @@
 }
 
 .copyright__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+  color: $icon-color;
 }
 
-@media (min-width: $tablet-width) {
-  .copyright__link {
-    padding-top: 3px;
-  }
+.copyright__link:hover {
+  color: $color-second;
 }
 
-.copyright__img {
-  width: 27px;
-  height: 34px;
-}
-
-.copyright__img:hover path {
-  fill: $color-second;
-}
-
-.copyright__img:active path {
-  fill: $color-second;
+.copyright__link:active {
+  color: $color-second;
   opacity: 0.3;
 }
