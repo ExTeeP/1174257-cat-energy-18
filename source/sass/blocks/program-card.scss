@@ -27,7 +27,7 @@
     position: absolute;
     top: 22px;
     left: 32px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -39,7 +39,7 @@
     position: absolute;
     top: 35px;
     left: 14px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -222,7 +222,7 @@
     position: absolute;
     top: 2px;
     right: -36px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -230,7 +230,7 @@
   &--arrow:hover::after {
     width: 34px;
     right: -45px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {

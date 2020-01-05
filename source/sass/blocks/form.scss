@@ -442,7 +442,7 @@
     height: 17px;
     top: 6px;
     left: 5px;
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -656,7 +656,7 @@
 }
 
 .form__input-text:focus + .form__icon {
-  color: $color-second;
+  fill: $color-second;
 }
 
 @media (min-width: $tablet-width) {

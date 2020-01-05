@@ -53,15 +53,18 @@
 .social__link {
   display: flex;
   align-items: center;
-  color: $icon-color;
 }
 
-.social__link:hover {
-  color: $color-second;
+.social__img {
+  fill: $icon-color;
 }
 
-.social__link:active {
-  color: $color-second;
+.social__img:hover {
+  fill: $color-second;
+}
+
+.social__img:active {
+  fill: $color-second;
   opacity: 0.3;
 }
 

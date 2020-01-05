@@ -28,15 +28,15 @@
   }
 }
 
-.copyright__link {
-  color: $icon-color;
+.copyright__img {
+  fill: $icon-color;
 }
 
-.copyright__link:hover {
-  color: $color-second;
+.copyright__img:hover {
+  fill: $color-second;
 }
 
-.copyright__link:active {
-  color: $color-second;
+.copyright__img:active {
+  fill: $color-second;
   opacity: 0.3;
 }
