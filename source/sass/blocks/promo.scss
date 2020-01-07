@@ -2,33 +2,6 @@
   margin-bottom: 22px;
 }
 
-@media (min-width: $tablet-width) {
-  .promo {
-    margin-bottom: 5px;
-    min-height: 806px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    min-height: 556px;
-    padding-top: 80px;
-    margin-bottom: 80px;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .promo__wrapper {
-    background-color: $color-second-v2;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo__wrapper {
-    margin-bottom: 28px;
-  }
-}
-
 .promo__inner {
   width: $mobile-width;
   min-height: 305px;
@@ -51,28 +24,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo__inner {
-    width: $tablet-width;
-    min-height: auto;
-    margin-bottom: 0;
-    padding: $tablet-padding;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-image: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__inner {
-    width: $desktop-width;
-    min-height: 200px;
-    margin-bottom: 33px;
-    padding: $desktop-padding;
-  }
-}
-
 .promo__title {
   @include font-size__5;
   width: 280px; //для IE
@@ -80,27 +31,6 @@
   margin-bottom: 25px;
   color: $text-color-second;
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .promo__title {
-    @include font-size__2;
-    width: 500px;  //для IE
-    margin-right: auto;  //для IE
-    margin-bottom: 42px;
-    margin-left: 87px;
-    text-align: left;
-    color: $text-color-main;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__title {
-    @include font-size__2;
-    margin-bottom: 43px;
-    margin-left: 80px;
-    text-align: left;
-  }
 }
 
 .promo__text {
@@ -113,27 +43,6 @@
   color: $text-color-second;
 }
 
-@media (min-width: $tablet-width) {
-  .promo__text {
-    @include font-size__12;
-    width: auto;
-    margin-right: 300px;
-    margin-bottom: 20px;
-    margin-left: 88px;
-    text-align: left;
-    color: $text-color-main;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__text {
-    @include font-size__12;
-    margin-right: 300px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-  }
-}
-
 .promo__img {
   width: 280px;
   height: 270px;
@@ -142,26 +51,6 @@
   bottom: -132px;
   left: 50%;
   z-index: 1;
-}
-
-@media (min-width: $tablet-width) {
-  .promo__img {
-    width: 709px;
-    height: 609px;
-    position: absolute;
-    margin-left: 0;
-    bottom: -609px;
-    left: 29px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__img {
-    width: 552px;
-    height: 499px;
-    top: -78px;
-    left: 490px;
-  }
 }
 
 .promo__btn {
@@ -175,7 +64,62 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .promo__wrapper {
+    background-color: $color-second-v2;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 5px;
+    min-height: 806px;
+  }
+
+  .promo__wrapper {
+    margin-bottom: 28px;
+  }
+
+  .promo__inner {
+    width: $tablet-width;
+    min-height: auto;
+    margin-bottom: 0;
+    padding: $tablet-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: none;
+  }
+
+  .promo__title {
+    @include font-size__2;
+    width: 500px;
+    margin-right: auto;
+    margin-bottom: 42px;
+    margin-left: 87px;
+    text-align: left;
+    color: $text-color-main;
+  }
+
+  .promo__text {
+    @include font-size__12;
+    width: auto;
+    margin-right: 300px;
+    margin-bottom: 20px;
+    margin-left: 88px;
+    text-align: left;
+    color: $text-color-main;
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    margin-left: 0;
+    bottom: -609px;
+    left: 29px;
+  }
+
   .promo__btn {
     @include font-size__12;
     width: 245px;
@@ -185,6 +129,40 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    min-height: 556px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .promo__inner {
+    width: $desktop-width;
+    min-height: 200px;
+    margin-bottom: 33px;
+    padding: $desktop-padding;
+  }
+
+  .promo__title {
+    @include font-size__2;
+    margin-bottom: 43px;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  .promo__text {
+    @include font-size__12;
+    margin-right: 300px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+
+  .promo__img {
+    width: 552px;
+    height: 499px;
+    top: -78px;
+    left: 490px;
+  }
+
   .promo__btn {
     margin-left: 80px;
   }

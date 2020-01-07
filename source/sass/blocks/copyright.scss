@@ -2,30 +2,16 @@
   min-height: 78px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;  //для IE
-}
-
-@media (min-width: $tablet-width) {
-  .copyright {
-    min-height: auto;
-    align-items: center;  //для IE
-  }
+  align-items: flex-start;
 }
 
 .copyright__text {
   @include font-size__17;
   margin: 0;
-  margin-right: auto; //для IE
-  padding-top: 7px;  //для IE
+  margin-right: auto;
+  padding-top: 7px;
   font-family: $font-second;
   color: $text-color-fourth;
-}
-
-@media (min-width: $tablet-width) {
-  .copyright__text {
-    padding-top: 0; //для IE
-    margin-right: 22px;
-  }
 }
 
 .copyright__img {
@@ -39,4 +25,16 @@
 .copyright__img:active {
   fill: $color-second;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-height: auto;
+    align-items: center;
+  }
+
+  .copyright__text {
+    padding-top: 0;
+    margin-right: 22px;
+  }
 }
