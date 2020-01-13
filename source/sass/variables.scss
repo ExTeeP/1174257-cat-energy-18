@@ -1,6 +1,7 @@
 $font-main: "Oswald", "Arial", sans-serif;
 $font-second: "Arial", "Helvetica", sans-serif;
 
+$retina-dppx: 1.5dppx;
 $mobile-width: 320px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
@@ -14,6 +15,7 @@ $form-padding: 0 70px;
 $color-main: #ffffff;
 $color-second: #68b738;
 $color-second--hover: #5eaa2f;
+$color-second-v2: #64a83b;
 $color-third: #f2f2f2;
 $color-third--hover: #ebebeb;
 $color-fourth: #eaeaea;
@@ -40,3 +42,5 @@ $btn-slider-dotted: rgba(0, 0, 0, 0.23);
 $btn-slider-line: rgba(0, 0, 0, 0.4);
 
 $product-add-element: #d4d4d4;
+
+$icon-color: #666666;

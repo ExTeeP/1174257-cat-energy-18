@@ -2,6 +2,10 @@
   min-height: 198px;
 }
 
+.main-nav__list {
+  @include list-style;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed {
     display: none;
@@ -18,7 +22,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 450px; //размер для IE 11(было 440)
+    width: 450px;
     min-height: 59px;
     padding-top: 8px;
   }
@@ -29,8 +33,4 @@
     width: 610px;
     min-height: 60px;
   }
-}
-
-.main-nav__list {
-  @include list-style;
 }

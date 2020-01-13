@@ -2,16 +2,7 @@
   min-height: 63px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;  //для IE
-}
-
-@media (min-width: $tablet-width) {
-  .social {
-    width: 125px;
-    min-height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
+  align-items: flex-start;
 }
 
 .social__list {
@@ -19,13 +10,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@media (min-width: $tablet-width) {
-  .social__list {
-    width: 125px;
-    justify-content: space-between;
-  }
 }
 
 .social__item {
@@ -42,39 +26,43 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .social__item {
-    width: auto;
-    height: auto;
-    margin-right: 0;
-  }
-}
-
 .social__link {
   display: flex;
   align-items: center;
 }
 
 .social__img {
-  background-color: $color-third;
+  fill: $icon-color;
+}
 
-  &--vk {
-    width: 22px;
-    height: 12px;
-  }
+.social__img:hover {
+  fill: $color-second;
+}
 
-  &--insta {
-    width: 17px;
-    height: 17px;
-  }
-
-  &--fb {
-    width: 10px;
-    height: 19px;
-  }
+.social__img:active {
+  fill: $color-second;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    width: 125px;
+    min-height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social__list {
+    width: 125px;
+    justify-content: space-between;
+  }
+
+  .social__item {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+  }
+
   .social__img--vk {
     width: 30px;
     height: 16px;
@@ -89,13 +77,4 @@
     width: 14px;
     height: 28px;
   }
-}
-
-.social__img:hover path {
-  fill: $color-second;
-}
-
-.social__img:active path {
-  fill: $color-second;
-  opacity: 0.3;
 }

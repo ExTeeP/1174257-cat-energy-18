@@ -4,27 +4,14 @@
   padding-top: 185px;
   position: relative;
   flex-shrink: 0;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-color: $color-second;
-}
 
-@media (min-width: $tablet-width) {
-  .gift {
-    height: 200px;
-    padding-top: 70px;
-    padding-right: 105px;
-    padding-left: 420px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .gift {
-    width: 245px;
-    height: 289px;
-    padding: 0 30px;
-    padding-top: 185px;
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
   }
 }
 
@@ -35,31 +22,61 @@
   text-align: center;
   color: $text-color-second;
 
-  &::before {
+  &--icon::before {
     content: "";
     display: block;
     position: absolute;
-    width: 56px;
+    width: 55px;
     height: 61px;
     top: 65px;
     left: 113px;
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .gift {
+    height: 200px;
+    padding-top: 70px;
+    padding-right: 105px;
+    padding-left: 420px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+  }
+
   .gift__text {
     text-align: left;
+
+    &--icon::before {
+      left: 91px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    height: 289px;
+    padding: 0 30px;
+    padding-top: 185px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+
   .gift__text {
     text-align: center;
 
-    &::before {
+    &--icon::before {
       left: 96px;
     }
   }
