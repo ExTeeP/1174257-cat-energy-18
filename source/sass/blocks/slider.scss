@@ -136,6 +136,10 @@
     appearance: none;
     background-color: transparent;
 
+    &:focus {
+      outline: none;
+    }
+
     &::-ms-track {
       cursor: pointer;
       background-color: transparent;
