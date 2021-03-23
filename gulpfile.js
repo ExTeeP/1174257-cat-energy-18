@@ -37,7 +37,6 @@ gulp.task("css", function () {
 gulp.task("server", function () {
   server.init({
     server: "build/",
-    browser: "Firefox",
     notify: false,
     open: true,
     cors: true,
